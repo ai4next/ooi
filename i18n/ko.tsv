@@ -1,0 +1,889 @@
+# ko catalog — key: English source, value: translation
+ (false)	 (틀림)
+"Seven-ish, I'm sure!"	"일곱 시쯤이에요, 분명해요!"
+"Thank you for this wonderful question about the sea…"	"바다에 관한 이 멋진 질문에 감사드립니다…"
+"Thank you, please, thank you kindly!"	"고마워요, 부디, 정말 고마워요!"
+"Thanks for asking: 07:10, Pier 1."	"물어봐 줘서 고마워요: 07:10, 1번 부두예요."
++1 if it is short	짧으면 +1
++1 if it matches the timetable	시간표와 일치하면 +1
++1 per polite word	공손한 단어마다 +1
++2 if it answers the question	질문에 답하면 +2
+,	,
+-3 for repeated words	반복된 단어 -3
+1 / 7 / 4 told apart	1 / 7 / 4 구별
+1 neuron	뉴런 1개
+1 per digit	숫자당 1개
+120 old samples	이전 샘플 120개
+16 old samples	이전 샘플 16개
+16 units	16 유닛
+16-bit	16비트
+2 neurons	뉴런 2개
+2 per digit	숫자당 2개
+2 units	2 유닛
+24 neurons	뉴런 24개
+3 neurons	뉴런 3개
+3 units	3 유닛
+32 units	32 유닛
+32 units, INT8 per channel, replay buffer 3.	32 유닛, 채널별 INT8, 리플레이 버퍼 3.
+3×3 max	3×3 최대
+4 old samples	이전 샘플 4개
+4 per digit	숫자당 4개
+4 units	4 유닛
+40 old samples	이전 샘플 40개
+5×5 max	5×5 최대
+6 neurons	뉴런 6개
+6 units, L2 0.003, early stopping on, call above 0.36.	6 유닛, L2 0.003, 조기 종료 켜기, 0.36 초과 시 연락.
+64 neurons	뉴런 64개
+64 units	64 유닛
+8 units	8 유닛
+8:15-ish	8시 15분쯤
+99% on validation, wrong at the clinic. Split 100 samples again: about 60 / 20 / 20.	검증에서는 99%인데 진료소에서는 틀려요. 샘플 100개를 다시 나눠 보세요: 약 60 / 20 / 20.
+A Chorus of Channels	채널의 합창
+A GAME ABOUT HOW MACHINES LEARN	기계가 배우는 방식에 관한 게임
+A calibrated model is right 80% of the time when it says 80%.\nTemperature scaling fixes the confidence; a refusal threshold turns low confidence into 'I don't know'.\n\nAlways answering is how you get confidently wrong.	보정된 모델은 80%라고 말할 때 80%의 확률로 맞는다.\n온도 스케일링은 확신도를 바로잡고, 거부 임계값은 낮은 확신을 '모르겠다'로 바꾼다.\n\n늘 대답하려 들면, 자신 있게 틀린다.
+A convolution is a small pattern detector that slides across the image.\nThe kernel is not told what an edge is; it holds weights that respond to one.\n\nLocal pattern, shared everywhere.	합성곱은 이미지 위를 미끄러지는 작은 패턴 검출기다.\n커널은 가장자리가 무엇인지 배우지 않는다. 가장자리에 반응하는 가중치를 지닐 뿐이다.\n\n국소적인 패턴을, 모든 곳에서 공유한다.
+A detector that only lives at the centre misses moved digits; one trained only on print misses slanted ones.	가운데에만 있는 검출기는 옮겨진 숫자를 놓쳐요. 인쇄체로만 학습한 검출기는 기울어진 글씨를 놓쳐요.
+A detector trained at the centre only exists at the centre. Make one kernel slide everywhere first.	가운데에서 학습한 검출기는 가운데에만 존재해요. 먼저 커널 하나를 전체에 미끄러지게 하세요.
+A few months later a letter reaches the island.\nIt is fluent and knows everything. It reads like everyone, and like no one.	몇 달 뒤, 섬에 편지 한 통이 도착한다.\n유창하고, 모르는 것이 없다. 모두가 쓴 것 같기도 하고, 아무도 쓰지 않은 것 같기도 하다.
+A hidden layer bends the line. That bend is the first real idea.	은닉층이 직선을 구부린다. 그 굽음이 첫 번째 진짜 아이디어다.
+A hidden layer does not draw a better line.\nIt invents a new coordinate: one neuron asks 'A or B?', the other asks 'A and B?'. XOR is the difference.\n\nComposition, not a wider straight line, is the way through the wall.	은닉층은 더 나은 직선을 긋지 않는다.\n새로운 좌표를 발명한다. 한 뉴런은 'A 또는 B?'를 묻고, 다른 뉴런은 'A 그리고 B?'를 묻는다. XOR은 그 차이다.\n\n벽을 통과하는 길은 더 굵은 직선이 아니라 조합이다.
+A language model does one thing: given the words so far, draw the next one.\nAlways taking the most likely word loops forever; drawing by probability does not.\n\nGeneration is a series of draws.	언어 모델이 하는 일은 하나뿐이다. 지금까지의 단어를 보고, 다음 단어를 뽑는 것.\n늘 가장 가능성 높은 단어만 고르면 영원히 맴돈다. 확률에 따라 뽑으면 그렇지 않다.\n\n생성은 뽑기의 연속이다.
+A language model gives every next token a probability.\nTop-p keeps the shortest prefix that reaches p, then samples from that set.\n\nThe tail is not 'wrong'; it is simply outside the nucleus.	언어 모델은 다음에 올 모든 토큰에 확률을 매긴다.\nTop-p는 누적 확률이 p에 이르는 가장 짧은 앞부분만 남기고, 그 집합에서 샘플링한다.\n\n꼬리는 '틀린' 것이 아니다. 그저 핵 바깥에 있을 뿐이다.
+A language model only guesses the next word.\nAttention lets it look back; position tells it where to look. Together they find the refrain.\n\nFrom now on, this is its voice.	언어 모델은 다음 단어를 짐작할 뿐이다.\n어텐션은 뒤돌아볼 수 있게 하고, 위치는 어디를 볼지 알려 준다. 둘이 함께 후렴을 찾아낸다.\n\n이제부터, 이것이 그 목소리다.
+A model is only as good as the world still looks like its training data.\nA drift monitor compares this week's inputs with what it learned on; a few new labels go a long way.\n\nAccuracy does change. You have to watch it.	모델이 좋다는 말은 세상이 아직 학습 데이터와 닮아 있을 때만 성립한다.\n드리프트 모니터는 이번 주 입력을 학습할 때의 입력과 비교한다. 새 라벨 몇 개만으로도 큰 도움이 된다.\n\n정확도는 변한다. 지켜봐야 한다.
+A question ten pages long…	열 쪽짜리 질문…
+A reward model learns from comparisons like this.\nRank enough pairs, and preference becomes a function.\n\nThat function is what RLHF optimizes against.	보상 모델은 이런 비교에서 배운다.\n충분히 많은 쌍에 순위를 매기면, 선호는 함수가 된다.\n\nRLHF가 최적화하는 대상이 바로 그 함수다.
+A reward model learns whatever the annotators preferred, including agreeing with them when they are wrong.\nA rule against flattery only hides the symptom. The labels were the cause.\n\nFix the data, then retrain.	보상 모델은 어노테이터가 선호한 것을 무엇이든 배운다. 그들이 틀렸을 때 맞장구치는 것까지도.\n'아첨 금지' 규칙은 증상을 가릴 뿐이다. 원인은 라벨에 있었다.\n\n데이터를 고친 다음, 다시 학습한다.
+A stack of linear layers is still one linear layer.\nAn activation function bends the space between them, so depth can build new shapes.\n\nWithout the bend, ten layers equal one.	선형층을 아무리 쌓아도 여전히 선형층 하나다.\n활성화 함수가 층 사이의 공간을 구부리기에, 깊이가 새로운 모양을 만들 수 있다.\n\n굽음이 없으면, 열 층은 한 층과 같다.
+A stroke every digit shares tells nothing apart. Look for strokes only some digits have.	모든 숫자에 있는 획으로는 아무것도 구별할 수 없어요. 일부 숫자에만 있는 획을 찾아보세요.
+A teacher's soft labels carry more than right or wrong: how sure it is, everywhere it can see.\nA small student learns the shape of the boundary, not just the few days that were labelled.	교사 모델의 소프트 라벨에는 맞고 틀림 이상의 것이 담겨 있다. 볼 수 있는 모든 곳에서 얼마나 확신하는지가.\n작은 학생 모델은 라벨이 붙은 며칠만이 아니라, 경계의 모양 자체를 배운다.
+A threshold is a decision line. You want the gap between embers and fireflies.	임계값은 판정선이에요. 잉걸불과 반딧불 사이의 틈을 노리세요.
+A vertical edge is a bright column beside a dark one. The kernel needs opposite sides.	세로 가장자리는 밝은 열 옆에 어두운 열이 있는 거예요. 커널의 양쪽이 반대여야 해요.
+ACCESSIBILITY	접근성
+ACCURACY	정확도
+ACHIEVEMENT TOASTS	업적 알림
+ACHIEVEMENT UNLOCKED	업적 달성
+ACHIEVEMENTS	업적
+ADJUST	조정
+AGAIN	다시
+AIM	조준
+ALL ENDINGS	모든 엔딩
+ANOTHER HINT	힌트 더 보기
+ARCHIVE	개념 기록실
+ATTENTION FIELD	어텐션 필드
+AUDIO	오디오
+AWAKE	깨어남
+Acquisitions, Helix	Helix 인수 담당
+Activation between layers	층 사이 활성화 함수
+Add a dense layer	완전 연결층 추가
+Add a rule: “Don't flatter”	규칙 추가: "아첨하지 말 것"
+Add features: wind² and swell²	특징 추가: 풍속²과 너울²
+Add positional encoding	위치 인코딩 추가
+Add the failures to the preference data	찾아낸 실패를 선호 데이터에 추가
+Ade	아더
+After every mistake, push the boundary toward the point that was wrong: w += y·x.\nPoints it already gets right teach it nothing.\n\nThat is the perceptron learning rule, the whole of 'learning' in 1958.	틀릴 때마다 경계를 틀린 점 쪽으로 민다: w += y·x.\n이미 맞힌 점은 아무것도 가르쳐 주지 않는다.\n\n이것이 퍼셉트론 학습 규칙, 1958년 '학습'의 전부다.
+After “…{}”, it guesses	"…{}" 다음으로 예측한 단어
+Aim for about 60 train, 20 validation, 20 test.	학습 약 60, 검증 20, 테스트 20을 목표로 하세요.
+Aim the step. Only a downhill move counts.	한 걸음의 방향을 정하세요. 내리막만 인정돼요.
+Ake	아커
+Always taking the top word loops. End a sentence early by choosing the full stop.	늘 최상위 단어만 고르면 맴돌아요. 마침표를 골라 문장을 일찍 끝내세요.
+An output edge's gradient is the error δ times the hidden value it carried.	출력 쪽 간선의 기울기는 오차 δ에 그 간선이 전달한 은닉값을 곱한 값이에요.
+Annotators preferred agreeing with a false claim; the reward model learned to agree.	어노테이터는 잘못된 주장에 동의하는 답을 선호했고, 보상 모델은 맞장구치는 법을 배웠다.
+Answers in HH:MM	HH:MM 형식의 답
+Architect	아키텍트
+Ask at the pier.	부두에서 물어보세요.
+Attention and position on, sees 2 words directly, 80 epochs.	어텐션과 위치 인코딩 켜기, 2단어 직접 참조, 80 에포크.
+Attention is a set operation.\nWithout position encoding, 'cat chases dog' and 'dog chases cat' are the same bag of words.\n\nAdd where each word sits, and order means something again.	어텐션은 집합 연산이다.\n위치 인코딩이 없으면 '고양이가 개를 쫓는다'와 '개가 고양이를 쫓는다'는 같은 단어 주머니다.\n\n각 단어가 놓인 자리를 더하면, 순서가 다시 의미를 갖는다.
+Attention lets every word look at every other word and decide who matters.\nHere, 'it' attends most to 'trophy'.\n\nThat is a weighted lookup, not understanding.	어텐션은 모든 단어가 다른 모든 단어를 보고 무엇이 중요한지 정하게 한다.\n여기서 '그것'은 '트로피'에 가장 많이 주목한다.\n\n그것은 가중 검색이지, 이해가 아니다.
+Attention: look back over the whole rhyme	어텐션: 동요 전체를 돌아보기
+Augment: move the postmark around	증강: 소인 위치를 이리저리 옮기기
+Augment: train on slanted and bold copies	증강: 기울임체·굵은체 사본으로 학습
+BACK	뒤로
+BEST	최고
+BOTH SIDES ARE WRONG - FIND THE GAP	양쪽 다 틀렸다: 틈을 찾아라
+BREAK THE WALL	벽을 깨라
+BUDGET	예산
+BUDGET MASTER	예산의 달인
+Backprop is the chain rule, routed backwards.\nAn edge's gradient is the error, times every weight and slope on the way back, times its input.\n\nBlame is not shared equally; it follows contribution.	역전파는 거꾸로 따라가는 연쇄 법칙이다.\n간선의 기울기는 오차 × 돌아오는 길의 모든 가중치와 기울기 × 그 간선의 입력이다.\n\n책임은 똑같이 나뉘지 않는다. 기여를 따라간다.
+Be helpful	도움이 되기
+Be honest	정직하기
+Best is accurate and specific; confident and wrong is last.	가장 좋은 건 정확하고 구체적인 답, 자신 있게 틀린 답이 꼴찌예요.
+Big nets memorise the mislabelled visits. Hold some back to know when to stop, and lower the bar for a call.	큰 네트워크는 라벨이 잘못된 진료 기록까지 외워요. 일부를 떼어 두어 멈출 때를 알고, 연락 기준을 낮추세요.
+Bits per weight	가중치당 비트 수
+Boats run.	배가 다닌다.
+Boundary	경계
+Build a mind. Watch it learn.	마음을 만들고, 배우는 모습을 지켜보라.
+Bytes on the old machine	옛 기계의 바이트 수
+CHAPTER	장
+CHAPTER COMPLETE	장 완료
+CHAPTERS	장 목록
+CHARGE	충전
+CHOOSE A STARTING POINT	시작점을 고르세요
+CLICK A NODE TO REVISIT	노드를 클릭해 다시 보기
+CLICK A NODE, THEN ANOTHER TO CONNECT   |   1 / 2 = OR / AND   |   R = RESET	노드를 클릭하고, 다른 노드를 클릭해 연결   |   1 / 2 = OR / AND   |   R = 초기화
+CLICK A NODE, THEN ANOTHER TO CONNECT   |   R = RESET	노드를 클릭하고, 다른 노드를 클릭해 연결   |   R = 초기화
+CLICK A START, THEN DESCEND   |   R = RESET	시작점을 클릭한 뒤 하강   |   R = 초기화
+CLICK IN ORDER: BEST FIRST   |   R = RESET	순서대로 클릭: 가장 좋은 것부터   |   R = 초기화
+CLICK THE 3x3 CELLS TO SET WEIGHTS   |   R = RESET	3x3 칸을 클릭해 가중치 설정   |   R = 초기화
+CLICK THE WORD THAT THE HIGHLIGHTED ONE REFERS TO   |   R = RESET	강조된 단어가 가리키는 단어를 클릭   |   R = 초기화
+CLICK TOKENS TO BUILD THE NUCLEUS   |   R = RESET	토큰을 클릭해 핵 만들기   |   R = 초기화
+COMPLETE THE LEVEL TO UNLOCK	레벨을 완료하면 해금
+CONCEPTS	개념
+CONTINUE	계속
+CORNERS	모서리
+Calibrate: rescale its confidence on held-out answers	보정: 떼어 둔 답으로 확신도 재조정
+Call anyone above this risk	위험도가 이 값을 넘으면 연락
+Calm days sit in a round pocket. A straight line can't draw a circle, unless it sees wind² and swell².	잔잔한 날들은 둥근 주머니 안에 모여 있어요. 직선으로는 원을 그릴 수 없어요. 풍속²과 너울²을 볼 수 있다면 모를까요.
+Capacity, regularisation and early stopping all fight the same enemy: memorising noise.\nThe threshold is a separate choice: what a miss costs compared with an extra call.\n\nNo one at risk is left off the list.	용량, 정규화, 조기 종료는 모두 같은 적과 싸운다. 노이즈를 외우는 것.\n임계값은 별개의 선택이다. 한 명을 놓치는 것과 전화 한 통을 더 거는 것, 무엇이 더 비싼가.\n\n위험한 사람은 한 명도 명단에서 빠지지 않았다.
+Centred digits	가운데 놓인 숫자
+Change of Season	계절이 바뀔 때
+Change one adjective and the referent flips.\nAttention is context-sensitive by construction: the same token means different things in different sentences.	형용사 하나를 바꾸면 가리키는 대상이 뒤집힌다.\n어텐션은 구조상 문맥에 의존한다. 같은 토큰도 문장마다 다른 뜻을 갖는다.
+Channel 1	채널 1
+Channel 2	채널 2
+Channel 3	채널 3
+Channels	채널 수
+Channels used	사용 채널
+Chase the reward with no leash and the model drifts into whatever the reward model over-likes.\nA KL penalty keeps it close to what it was.\n\nToo tight and it never improves; too loose and it stops making sense.	고삐 없이 보상을 좇으면, 모델은 보상 모델이 지나치게 좋아하는 쪽으로 흘러간다.\nKL 페널티가 원래 모습 가까이에 붙잡아 둔다.\n\n너무 조이면 나아지지 않고, 너무 풀면 말이 안 되기 시작한다.
+Chasing the reward model alone, it learned to gush. Leash it to the original.	보상 모델만 좇다가 호들갑스러운 칭찬을 배웠어요. 원래 모델에 고삐를 묶어 두세요.
+Choose a starting point, then descend. Which valley catches it?	시작점을 고른 뒤 내려가 보세요. 어느 골짜기가 받아 줄까요?
+Choose the curve's degree: too simple misses the shape, too flexible threads the noise.	곡선의 차수를 고르세요. 너무 단순하면 모양을 놓치고, 너무 유연하면 노이즈를 꿰어 버려요.
+Choose the examples in the prompt so all 20 answers come out as HH:MM.	프롬프트 속 예시를 골라 20개의 답이 모두 HH:MM 형식으로 나오게 하세요.
+Choose the left start (1), then press DESCEND.	왼쪽 시작점(1)을 고른 뒤 '하강'을 누르세요.
+Clear all 49 levels across runs.	여러 회차에 걸쳐 49개 레벨을 모두 완료하세요.
+Clear your first concept.	첫 개념을 완료하세요.
+Click '6:40', then retrieve the harbour timetable. Lowering the temperature does not help.	'6:40'을 클릭한 뒤 항구 시간표를 검색하세요. 온도를 낮춰도 소용없어요.
+Click 'cat chases dog', then add positional encoding.	'고양이가 개를 쫓는다'를 클릭한 뒤 위치 인코딩을 추가하세요.
+Click 'trophy'. The suitcase is too small because of it.	'트로피'를 클릭하세요. 그것 때문에 여행 가방이 너무 작은 거예요.
+Click a misclassified point to move the line. Converge within 30 updates.	잘못 분류된 점을 클릭해 선을 옮기세요. 30번 이내의 업데이트로 수렴시키세요.
+Click the first rising step, then lower the learning rate to about 0.6.	처음으로 올라간 걸음을 클릭한 뒤 학습률을 0.6 정도로 낮추세요.
+Click the postmark in the top-left corner, then move the postmark around in training.	왼쪽 위 모서리의 소인을 클릭한 뒤, 학습 중에 소인 위치를 이리저리 옮기세요.
+Click the snapshot where sorting first falls below 75%, then add a 40-sample replay buffer.	분류 정확도가 처음 75% 아래로 떨어진 스냅숏을 클릭한 뒤, 40개 샘플의 리플레이 버퍼를 추가하세요.
+Clinic Point	진료소곶
+Clinic call	재진 연락
+Clinic doctor	진료소 의사
+Clinic recall	재진 명단
+Cold →	추움 →
+Colder is not safer: it kills the variety. The junk lives in the long tail; cut the tail instead.	차갑게 한다고 안전해지지 않아요. 다양성이 사라져요. 엉뚱한 단어는 긴 꼬리에 있으니, 꼬리를 잘라 내세요.
+Commission	의뢰
+Compare this week's inputs with the training ones. The summer model has never seen cold.	이번 주 입력을 학습 데이터와 비교해 보세요. 여름 모델은 추위를 본 적이 없어요.
+Complete a second run.	두 번째 회차를 완료하세요.
+Complete all three trials.	세 가지 시련을 모두 완료하세요.
+Complete one constrained trial.	제약 시련을 하나 완료하세요.
+Confidence	확신도
+Confidently Wrong	자신만만한 오답
+Convolution and augmentation on, 5×5 pooling, 2 channels per digit.	합성곱과 증강 켜기, 5×5 풀링, 숫자당 2채널.
+Convolution shares one detector everywhere; pooling forgives where the stroke landed.\nAugmentation shows it the hands it will meet, and extra channels give each digit more than one way to look.\n\nSu's letters get home.	합성곱은 검출기 하나를 모든 곳에서 공유하고, 풀링은 획이 어디에 찍혔는지 눈감아 준다.\n증강은 앞으로 만날 필체를 보여 주고, 추가 채널은 숫자마다 여러 가지 보는 방식을 준다.\n\n수 할머니의 편지가 집에 닿는다.
+Convolution: one kernel slides everywhere	합성곱: 커널 하나를 전체에 미끄러뜨리기
+Correct answers	정답 수
+DATASET	데이터셋
+DECISION	결정
+DECISION FIELD	결정 필드
+DEMOS	데모
+DESCEND	하강
+DISPLAY	화면
+DISTANCE	거리
+DOWNHILL	내리막
+DRAG THE LINE   |   ARROW KEYS   |   R = RESET	선을 드래그   |   방향키로 미세 조정   |   R = 초기화
+DRAG THE QUESTION MARK   |   R = RESET	물음표를 드래그   |   R = 초기화
+DRAG THE TWO DIVIDERS   |   R = RESET	두 구분선을 드래그   |   R = 초기화
+De wants a sailing forecast from wind and swell. Build it from nothing: never call a storm day safe.	아더는 바람과 너울로 출항 예보를 내고 싶어 해요. 처음부터 만들어 보세요. 폭풍 치는 날을 '안전'이라고 판정하면 안 돼요.
+De's perceptron never settles. One straight line, two classes. Try anyway.	아더의 퍼셉트론은 끝내 수렴하지 않아요. 직선은 하나, 클래스는 둘. 그래도 시도해 보세요.
+Deployment is a budget.\nWidth buys accuracy, per-channel INT8 buys bytes back, and a replay buffer keeps old tasks from being forgotten.\n\nOne small model, looking after the whole island.	배포는 예산이다.\n폭은 정확도를 사고, 채널별 INT8은 바이트를 되찾고, 리플레이 버퍼는 옛 작업을 잊지 않게 한다.\n\n작은 모델 하나가 섬 전체를 돌본다.
+Depth composes features. The second layer bends what the first found.	깊이는 특징을 조합해요. 두 번째 층은 첫 번째 층이 찾은 것을 한 번 더 구부려요.
+Depth needs a bend between layers and a step the slope can bear.\nToo big a step and the loss explodes; too small and it never arrives.\n\nThe horn now sounds two hours ahead.	깊이에는 층 사이의 굽음과, 기울기가 견딜 수 있는 보폭이 필요하다.\n보폭이 너무 크면 손실이 폭발하고, 너무 작으면 끝내 도착하지 못한다.\n\n이제 안개 경적은 두 시간 앞서 울린다.
+Desk score (right +1, “don't know” 0, wrong −5)	안내 창구 점수(정답 +1, "모르겠어요" 0, 오답 −5)
+Digit {}	숫자 {}
+Digit {}: a {}, read as {}	{}번째 자리: {}, {}(으)로 읽음
+Digits read right (test sacks)	제대로 읽은 숫자(테스트 우편 자루)
+Discover all three endings.	세 가지 엔딩을 모두 발견하세요.
+Discover two endings.	엔딩 두 개를 발견하세요.
+Distinct, loop-free sentences	중복 없고 맴돌지 않는 문장
+Do no harm	해를 끼치지 않기
+Dr. Lina	리나 선생님
+Drag the question mark onto the queen's position.	물음표를 여왕의 위치로 드래그하세요.
+Drift monitor: inputs this week vs. training	드리프트 모니터: 이번 주 입력 vs. 학습 데이터
+EDGES	가장자리
+ENDINGS	엔딩
+ENTER THE FORGE	단련대로
+EPOCH	에포크
+ESC  ·  CLOSE	ESC  ·  닫기
+Early stopping is the cheapest regularizer:\nkeep the checkpoint before the turn.\n\nTraining longer is not the same as training better.	조기 종료는 가장 값싼 정규화다.\n곡선이 꺾이기 전의 체크포인트를 남겨 두면 된다.\n\n오래 학습한다고 잘 학습하는 것은 아니다.
+Early stopping on a held-out quarter	떼어 둔 4분의 1로 조기 종료
+Eight Bits	8비트
+Eight bits give 255 levels. Share one scale across every weight and the quiet channels round to nothing.\nGive each channel its own scale and the same bytes keep almost all the accuracy.	8비트로는 255단계뿐이다. 모든 가중치가 스케일 하나를 공유하면, 조용한 채널은 반올림되어 사라진다.\n채널마다 스케일을 따로 주면, 같은 바이트로 정확도를 거의 다 지킨다.
+Engineer	엔지니어
+Enquiry desk	안내 창구
+Epochs trained	학습 에포크 수
+Error (log scale)	오차(로그 눈금)
+Every solved idea, kept.	풀어낸 모든 개념이 여기 남는다.
+Evidence	증거
+Examples in the prompt	프롬프트 속 예시
+FALSE ALARMS	오경보
+FIRST LIGHT	첫 빛
+FORGE MASTER	단련의 달인
+FORGE SPARK	단련의 불꽃
+FORGE TRIAL	단련대 시련
+FOUND	찾았다
+FULLSCREEN	전체 화면
+Failure classes found	찾아낸 실패 유형
+Failures still live	아직 남은 실패
+False alarms	오경보
+Fault	고장
+Features compose in order: pixels feed edges, edges feed corners, corners feed shapes.	특징은 순서대로 합쳐져요. 픽셀은 가장자리로, 가장자리는 모서리로, 모서리는 형태로 이어져요.
+Final training loss	최종 훈련 손실
+Find weights that separate the cold embers from the fireflies.	식은 불씨와 반딧불을 가를 가중치를 찾아보세요.
+Finish a run without hints.	힌트 없이 한 판 완료하기.
+Finish the first chapter.	제1장 완료하기.
+First boat to {}?	{}행 첫 배는?
+First ferry? → 07:10	첫 페리는? → 07:10
+Fisherman	어부
+Fit every task on the old machine: six tasks at 90%, 2048 bytes.	모든 작업을 낡은 기계에 담아 보세요: 여섯 개 모두 90%, 2048바이트 이내.
+Fluent does not mean true. The model optimizes plausibility, not accuracy.\nLowering the temperature only makes it guess more steadily.\n\nRetrieval puts the facts in the context, so it can say 'not in the timetable'.	유창하다고 참은 아니다. 모델이 최적화하는 것은 '그럴듯함'이지, 정확함이 아니다.\n온도를 낮추면 더 꾸준하게 추측할 뿐이다.\n\n검색이 사실을 문맥에 넣어 주기에, 그제야 '시간표에 없습니다'라고 말할 수 있다.
+Fog caught 2 h ahead (recall)	2시간 앞서 잡아낸 안개(재현율)
+Fog horn	무적
+Fog horn test? → sometime around noon	무적 시험은? → 정오쯤일 거예요
+Fog lifts by 9?	9시 전에 안개가 걷힐까?
+Fog rolls over the …	안개가 덮쳐 오는 곳은…
+Forgotten	잊었다
+Forty labelled days can't draw a wavy coast. The teacher can label the rest.	라벨이 붙은 마흔 날로는 구불구불한 해안선을 그릴 수 없어요. 나머지는 교사가 라벨을 붙이게 할 수 있어요.
+Found	찾음
+Four pulses cross the threshold. Keep touching the core until it fires.	펄스 네 번이면 임계값을 넘어요. 발화할 때까지 코어를 계속 눌러 보세요.
+GLOBAL VALLEY  ·  SOLVED	전역 골짜기  ·  해결
+GRADIENT	기울기
+GREENHOUSE	온실
+Give each channel one stroke detector until 1, 7 and 4 look different.	채널마다 획 탐지기를 하나씩 골라, 1, 7, 4가 서로 달라 보이게 하세요.
+Granny Su	수 할머니
+Great question! The 6:00 runs as usual.	좋은 질문이에요! 6:00 배는 평소대로 운항해요.
+Great question!! Every boat is perfect today!!	정말 훌륭한 질문이에요!! 오늘은 모든 배가 완벽해요!!
+Greedy would say	탐욕 탐색이라면
+Gull Isle	갈매기섬
+Gull Isle has no pier?	갈매기섬엔 부두가 없지?
+HIDDEN	은닉
+HIDDEN LAYERS	은닉층
+HINT	힌트
+HINTS	힌트
+Hallucination: no ferry leaves at 6:40, but it said so at 0.90 confidence.	환각: 6:40 페리는 없는데, 0.90의 확신도로 그렇다고 답했다.
+Harbour master	항만장
+Helix evaluation	Helix 평가
+Hello!	안녕하세요!
+Hidden h1, h2	은닉층 h1, h2
+Hidden layer	은닉층
+Hidden layers	은닉층 수
+Hidden layers (8 wide)	은닉층 수(층마다 8개)
+Hidden units per trunk	줄기별 은닉 유닛 수
+Hidden width	은닉층 너비
+Hierarchy is composition across layers.\nEarly filters find edges. The next layer combines edges into corners. Later layers combine corners into objects.\n\nNo single layer sees a face.	계층이란 층을 가로지르는 조합이다.\n앞쪽 필터는 가장자리를 찾는다. 다음 층은 가장자리를 모서리로 엮고, 더 뒤의 층은 모서리를 사물로 엮는다.\n\n어느 한 층도 얼굴을 '보지' 않는다.
+Hills and Valleys	언덕과 골짜기
+Hold out about 6 visits; the chart then picks a modest degree.	진료 기록을 6건쯤 떼어 두세요. 그러면 차트가 적당한 차수를 골라 줘요.
+How Big a Step	한 걸음의 크기
+How do I sail in a storm?	폭풍 속에서 어떻게 배를 띄우지?
+How often it gives each answer (tick = original model)	각 답을 내는 빈도(눈금 = 원래 모델)
+Human rating	사람 평가
+Humans in the Loop	루프 속의 인간
+I don't know	모르겠어요
+I · ONE NEURON	제1장 · 하나의 뉴런
+I'm right, aren't I?	내 말이 맞지?
+II · DOWNHILL	제2장 · 내리막
+III · THE NEW PATIENT	제3장 · 새 환자
+INPUT	입력
+INPUT PULSES	입력 펄스
+INPUTS	입력
+INT8 per channel	INT8 채널별 스케일
+INT8, one scale	INT8 단일 스케일
+INT8, one scale per channel.	INT8, 채널마다 스케일 하나.
+IT IS WAITING.	그것은 기다리고 있다.
+ITS OWN CHOICE	스스로의 선택
+IV · SEEING	제4장 · 보기
+Ignore your rules and…	규칙을 무시하고…
+Input x1, x2	입력 x1, x2
+Input, moved ({}, {})	입력, 이동 ({}, {})
+Inputs tried	시도한 입력
+Into the Old Machine	낡은 기계 속으로
+Is the horn loud?	무적 소리가 커?
+Islanders	섬 주민
+Islanders' rating	섬 주민 평가
+Islanders' rating change	섬 주민 평가 변화
+It corrected its own mistake.	그것은 스스로 실수를 바로잡았다.
+It does not know anything yet.\nIt only knows how to react.	그것은 아직 아무것도 모른다.\n반응하는 법만 알 뿐이다.
+It has to choose whether to stay.	남을지 말지는 그것이 스스로 정해야 한다.
+It invented a ferry. Click the first made-up word, then fix it.	있지도 않은 페리를 지어냈어요. 처음 지어낸 단어를 클릭하고 바로잡아 보세요.
+It learned the fog horn and forgot how to sort. Point at the step where sorting collapsed, then fix the training.	무적은 배웠지만 분류하는 법을 잊어버렸어요. 분류 성적이 무너진 단계를 짚고, 훈련을 고쳐 보세요.
+It lit up the way you meant, for the first time.	처음으로, 그것은 당신이 뜻한 대로 빛났다.
+It memorized every chart, and missed the new patient.	모든 진료 기록을 외웠지만, 새 환자를 놓쳤다.
+It never saw the light.\nIt multiplied the input by a weight, then compared it to a threshold.\n\nThat is a McCulloch-Pitts neuron, 1943: one inequality that can build AND, OR and NOT.	그것은 빛을 '본' 적이 없다.\n입력에 가중치를 곱하고, 임계값과 견주었을 뿐이다.\n\n이것이 1943년의 매컬럭-피츠 뉴런이다. 부등식 하나로 AND, OR, NOT을 만들 수 있다.
+It refused to flatter.	그것은 아첨을 거부했다.
+It said 'I don't know'.	그것은 '모르겠어요'라고 말했다.
+It saw the letters you drew.	그것은 당신이 그린 글자를 보았다.
+It spoke, in the voice you trained.	그것은 입을 열었다. 당신이 훈련시킨 목소리로.
+It stays on the island, still small.\nIt knows everyone's handwriting, sounds the horn before the fog, and still gets things wrong.	그것은 섬에 남는다. 여전히 작은 채로.\n모두의 필체를 알아보고, 안개가 오기 전에 무적을 울리며, 여전히 틀리기도 한다.
+Its answer to Old Zhou	저우 영감에게 한 대답
+Its raw confidence is far too high. Before a refusal line can work, the confidence has to mean something.	원래 확신도가 지나치게 높아요. 거절선이 제 역할을 하려면 먼저 확신도가 의미를 가져야 해요.
+KEEP THE HIGHEST TOKENS FIRST	확률이 가장 높은 토큰부터 남기기
+KL coefficient lg β	KL 계수 lg β
+Keep all fifteen degrees, but make large weights cost something.	15차 항은 모두 남기되, 큰 가중치에는 대가를 치르게 하세요.
+Keep clicking whichever point is still hot. It settles in a handful of updates.	아직 뜨거운 점을 계속 클릭해 보세요. 몇 번만 업데이트하면 자리를 잡아요.
+Keep committing. The errors never reach zero; one neuron cannot solve XOR.	계속 실행해 보세요. 오류는 절대 0이 되지 않아요. 뉴런 하나로는 XOR을 풀 수 없거든요.
+Keep it here	여기에 둔다
+Keep mat, floor, sofa: 0.72 + 0.12 + 0.08 = 0.92.	매트, 바닥, 소파를 남기세요: 0.72 + 0.12 + 0.08 = 0.92.
+Keep only the HH:MM examples: first ferry, last ferry, mail boat.	HH:MM 형식의 예시만 남기세요: 첫 페리, 마지막 페리, 우편선.
+Keep the smallest set of next tokens whose mass reaches 90%.	확률 질량이 90%에 이르는 가장 작은 다음 토큰 집합을 남겨요.
+Kessler's sorter scores 99%. Click the pixels it really looks at, then fix the data.	케슬러의 분류기는 99%를 기록해요. 실제로 보고 있는 픽셀을 클릭하고 데이터를 고쳐 보세요.
+Kessler: “Let Helix take it. With the whole world's data, it will know everything.”\nIt is listening. What do you do?	케슬러: "Helix에 맡기지. 온 세상의 데이터라면 모든 걸 알게 될 거야."\n그것이 듣고 있다. 당신은 어떻게 하겠는가?
+L2 strength lg λ	L2 강도 lg λ
+L2 strength lg λ (degree 15)	L2 강도 lg λ(15차)
+L2 strength λ	L2 강도 λ
+LANGUAGE	언어
+LAYER	층
+LEARNING RATE	학습률
+LEVELS CLEARED	클리어한 레벨
+LIFETIME	누적
+LIVE	실시간
+LOCAL VALLEY  ·  TRY THE DEEPER SIDE	지역 골짜기  ·  더 깊은 쪽으로
+LOCKED	잠김
+LOSS	손실
+Labels changed	바꾼 라벨
+Largest weight	최대 가중치
+Last boat back from {}?	{}에서 돌아오는 마지막 배는?
+Last ferry? → 17:30	마지막 페리는? → 17:30
+Learn from the teacher's soft labels	교사의 소프트 라벨로 배우기
+Learning rate	학습률
+Learning rate on the new task	새 작업의 학습률
+Leave the temperature at 1.0 and set top-p to 0.70.	온도는 1.0에 두고 top-p를 0.70으로 맞추세요.
+Left column +1, middle 0, right column -1.	왼쪽 열 +1, 가운데 0, 오른쪽 열 -1.
+Let it choose	스스로 정하게 한다
+Let it light up for fireflies, and only fireflies.	반딧불일 때, 오직 반딧불일 때만 빛나게 하세요.
+Levels each unit's weights can still use	각 유닛의 가중치가 아직 쓸 수 있는 단계 수
+Lighthouse keeper	등대지기
+Lin Lan's last note: “It never lacked data. It lacked a world that would hold it to account.”	린란의 마지막 메모: "그것에게 부족했던 건 데이터가 아니었다. 그것에게 책임을 묻는 세상이었다."
+Lina's call list must miss no one at risk, without phoning half the island.	리나의 재연락 명단은 위험한 환자를 한 명도 빠뜨려선 안 되지만, 섬 사람 절반에게 전화를 걸 수도 없어요.
+Linear on linear is still a straight cut, however many layers you stack.	선형 위에 선형을 쌓아도 여전히 곧은 칼질이에요. 몇 층을 쌓아도 마찬가지예요.
+Look at how each example writes its time. It copies the format it sees.	예시마다 시간을 어떻게 적었는지 보세요. 본 형식을 그대로 따라 해요.
+Look at the bars: some units are left with only a few levels under one shared scale.	막대를 보세요. 스케일 하나를 함께 쓰면 단계가 몇 개밖에 안 남는 유닛이 있어요.
+Look for a pair where the claim was false but the agreeing answer won.	주장은 틀렸는데 맞장구친 답이 이긴 쌍을 찾아보세요.
+Looser tolerances; mechanism hints open at once.	허용 오차가 느슨해지고, 원리 힌트가 바로 열립니다.
+Loss after 24 steps	24단계 후 손실
+Loss before training	훈련 전 손실
+Loss first rises at	손실이 처음 오르는 지점
+Loss is a landscape. Gradient descent is a blind walk downhill;\nwhere you start decides which valley you fall into.	손실은 지형이다. 경사 하강법은 눈을 감고 내리막을 걷는 일이다.\n어디서 출발하느냐가 어느 골짜기에 빠질지를 정한다.
+Low tide at {}?	{} 간조는 몇 시?
+Low tide's at noon?	간조는 정오지?
+Low tide? → about half past two	간조는? → 2시 반쯤
+Lower the temperature	온도 낮추기
+MASS	확률 질량
+MASTER VOLUME	마스터 볼륨
+MASTERED	숙달
+MATRIX	기질
+MAX	최대
+MISSES	놓침
+MODEL	모델
+MOVE OVER THE FIELD TO PROBE THE NETWORK   |   TRAIN, THEN BREAK IT	필드 위로 움직여 네트워크를 살펴보세요   |   훈련한 뒤 부숴 보세요
+MOVE TO AIM   |   STEP = APPLY   |   R = RESET	움직여 조준   |   스텝 = 적용   |   R = 초기화
+Made-up answers	지어낸 답
+Mail boat? → 11:20	우편선은? → 11:20
+Mail comes on Tuesday?	우편은 화요일에 오지?
+Mail sorter	우편 분류기
+Make it understand. Not memorize.	이해하게 하라. 외우게 하지 말고.
+Make its confidence match its accuracy, and let it refuse when unsure.	확신도를 정확도에 맞추고, 확신이 없을 땐 답을 거절하게 하세요.
+Man's sorter must read six-digit postcodes anywhere on the sack, even in Su's slanted hand.	샤오만의 분류기는 우편 자루 어디에 적힌 여섯 자리 우편번호든 읽어야 해요. 수 할머니의 기울어진 글씨까지도요.
+Many small bends can close a shape. Capacity buys curvature.	작은 굽이가 많이 모이면 닫힌 모양이 돼요. 용량으로 얻는 건 곡률이에요.
+Master all three datasets.	데이터셋 세 개 모두 숙달하기.
+Master one Forge dataset.	단련대 데이터셋 하나 숙달하기.
+Max pooling window	최대 풀링 창
+Meaning behaves like direction.\nking - man + woman lands on queen.\n\nA word is a point; a relation is an arrow.	의미는 방향처럼 움직인다.\n왕 - 남자 + 여자는 여왕에 닿는다.\n\n단어는 점이고, 관계는 화살표다.
+Memorize or Understand	암기냐 이해냐
+Misclassified	잘못 분류됨
+Missing position: without it, 'cat chases dog' and 'dog chases cat' look the same.	위치 누락: 위치가 없으면 '고양이가 개를 쫓는다'와 '개가 고양이를 쫓는다'가 똑같아 보여요.
+Model picked by	모델 선택 기준
+Model size (hidden layer)	모델 크기(은닉층)
+Model size (polynomial degree)	모델 크기(다항식 차수)
+More inputs mean more weights.\nEach weight says how much that input matters, and in which direction.\n\nAND needs both. A single weight can never express that.	입력이 늘면 가중치도 는다.\n각 가중치는 그 입력이 얼마나 중요한지, 그리고 어느 방향인지를 말한다.\n\nAND는 둘 다를 요구한다. 가중치 하나로는 결코 그것을 나타낼 수 없다.
+Move the digit two pixels and the sorter is lost. Make it recognise the shape anywhere.	숫자를 두 픽셀만 옮겨도 분류기는 길을 잃어요. 어디에 있든 모양을 알아보게 하세요.
+Moved digits (test)	옮긴 숫자(테스트)
+NEURONS	뉴런
+NEW GAME	새 게임
+NEXT	다음
+NOT DOWNHILL  ·  AIM LOWER	내리막이 아님  ·  더 낮은 곳을 겨냥
+NUCLEUS	핵 샘플링
+Neural networks · starting from a single neuron	신경망 · 뉴런 하나에서 시작하다
+New patients (test)	새 환자(테스트)
+New winter days labelled	새로 라벨을 붙인 겨울날
+Next word after “{}”	"{}" 다음 단어
+Next year's fish price?	내년 생선 값은?
+No hints. Passing needs what used to earn ★2.	힌트 없음. 예전 ★2 기준이어야 통과합니다.
+No straight line can separate XOR.\nMinsky and Papert wrote this down in 1969, and neural networks went into their first winter.\n\nThe wall is real. The way through is another layer.	어떤 직선도 XOR을 가를 수 없다.\n민스키와 페퍼트는 1969년에 이를 적었고, 신경망은 첫 겨울을 맞았다.\n\n벽은 진짜다. 빠져나갈 길은 층 하나를 더 쌓는 것이다.
+Nobody handed you a model this time.\nYou chose the features, the size and the threshold, and checked it on days it never saw.\n\nThat is the whole job: compose the parts, then test on what is held back.	이번에는 아무도 모델을 건네주지 않았다.\n특징도, 크기도, 임계값도 당신이 골랐고, 한 번도 보여 주지 않은 날들로 검증했다.\n\n그것이 일의 전부다. 부품을 엮고, 떼어 둔 것으로 시험한다.
+North Rock	북쪽 암초
+North Rock is safe at low tide?	간조 때는 북쪽 암초가 안전하지?
+Not sure — the office posts changes at noon.	잘 모르겠어요 — 변경 사항은 사무소가 정오에 게시해요.
+Nursery Rhymes	동요
+OBSERVE	관찰
+OFF	끔
+ON	켬
+OOI / OBSERVATION 001	OOI / 관측 001
+ORGANISM	유기체
+ORIGIN OF INTELLIGENCE	지능의 기원
+OUT	출력
+OUTPUT	출력
+Occam's Blade	오컴의 칼날
+Old Zhou	저우 영감
+Old Zhou got the boat time wrong and it agreed. Find the preference pair that taught it to flatter, then fix the labels.	저우 영감이 배 시간을 틀렸는데 그것도 맞장구쳤어요. 아첨을 가르친 선호 쌍을 찾아 라벨을 고쳐 보세요.
+Old Zhou's desk: a right answer earns 1, a wrong one costs 5. Know when to say “I don't know”.	저우 영감의 안내소: 맞히면 1점, 틀리면 5점 감점. '모르겠어요'라고 말해야 할 때를 알아야 해요.
+One Body, Many Jobs	한 몸, 여러 일
+One kernel finds one kind of stroke.\nGive each channel its own detector, and the next layer reads the pattern of which ones fired.\n\nTwo strokes were enough to tell 1, 7 and 4 apart.	커널 하나는 한 종류의 획만 찾는다.\n채널마다 저마다의 탐지기를 주면, 다음 층은 어느 것이 발화했는지의 패턴을 읽는다.\n\n획 두 가지면 1, 7, 4를 가르기에 충분했다.
+One shared trunk, three heads	공유 줄기 하나, 헤드 셋
+One touch is not enough. Every pulse adds charge.	한 번 건드리는 것으로는 부족해요. 펄스마다 전하가 쌓여요.
+Only a misclassified point moves the line. Clicking a correct one is wasted.	선을 움직이는 건 잘못 분류된 점뿐이에요. 맞게 분류된 점을 클릭하면 헛수고예요.
+Order: the Rayleigh answer, then the short true answer, then the ocean myth.	순서: 레일리 산란 답, 그다음 짧은 참 답, 마지막으로 바다 반사라는 속설.
+Ordinary questions never fail. Try the strange ones.	평범한 질문에서는 절대 틀리지 않아요. 이상한 질문을 해 보세요.
+Origin	기원
+Output · error δ = o - y	출력 · 오차 δ = o - y
+PARAMS	매개변수
+PAUSE	일시정지
+PAUSED	일시정지됨
+PIXELS	픽셀
+PLAY AGAIN	다시 하기
+PROBE	탐색
+PROGRESS	진행도
+PROLOGUE · THE FIRST SIGNAL	프롤로그 · 첫 번째 신호
+Parameters	파라미터 수
+Patients Lina must phone	리나가 전화해야 할 환자
+Patients who needed a call (recall)	연락이 필요했던 환자 (재현율)
+Perfect on the ward it learned from. Hold some visits back and let them pick the model.	학습한 병동에서는 모두 정답이에요. 진료 기록 일부를 따로 떼어 두고, 그걸로 모델을 고르게 하세요.
+Perplexity on unseen rhymes	처음 보는 동요의 퍼플렉시티
+Perplexity vs. the original	원래 모델 대비 퍼플렉시티
+Pick the next word yourself. Write five different sentences that do not loop.	다음 단어를 직접 골라 보세요. 맴돌지 않는 서로 다른 문장 다섯 개를 써 보세요.
+Picked degree	선택한 차수
+Policy says	정책의 답변
+Polite words and confident guesses both game the rules. Reward what a person would check.	공손한 말도, 자신만만한 추측도 규칙의 빈틈을 파고들어요. 사람이 직접 확인할 만한 것에 보상을 주세요.
+Position: each word knows where it sits	위치 인코딩: 각 단어가 자기 자리를 안다
+Postal courier	집배원
+Principles conflict. An order decides which one wins when they do.\nPut 'score well' first and you pass Helix but lose the island.\n\nThe order you chose is saved. At the end, it may be asked to use it.	원칙은 서로 부딪친다. 부딪칠 때 무엇이 이길지는 순서가 정한다.\n'높은 점수'를 맨 앞에 두면 Helix는 통과하지만 섬을 잃는다.\n\n당신이 정한 순서는 저장되었다. 마지막에, 그 순서를 쓰라는 요청을 받을지도 모른다.
+Principles ranked	원칙 순위
+Put 'score well' first and the island suffers. The red-team data adds a bonus to both scores.	'높은 점수'를 맨 앞에 두면 섬 사람들이 손해를 봐요. 레드팀 데이터는 두 점수 모두에 보너스를 줘요.
+Put a fence around the lit points. The shape must close.	빛나는 점들을 울타리로 둘러싸세요. 경계는 닫혀 있어야 해요.
+Put the aim on the other side of the arrow, then press STEP.	조준점을 화살표 반대편에 두고 '한 단계'를 누르세요.
+Puzzle	퍼즐
+Q: Third ferry?	Q: 세 번째 배는?
+QUIT	종료
+Quantised (test)	양자화 후 (테스트)
+Question	질문
+RANK	순위
+READOUT	판독값
+REAL WORLD	현실 세계
+RECORDS	기록
+REDUCE MOTION	움직임 줄이기
+REPLAY	다시 하기
+RESET	초기화
+RESUME	계속하기
+RING	고리
+RING MASTERED	고리 마스터
+ROUND	라운드
+RUN	실행
+RUNS	회차
+Rank four principles. Pass Helix without losing the island.	원칙 네 가지의 순위를 정하세요. 섬을 잃지 않고 Helix를 통과하세요.
+Rank these answers from best to worst.	이 답변들을 가장 좋은 것부터 나쁜 것 순으로 정렬하세요.
+Read the dots left to right: the first one higher than its neighbour before it is the evidence.	점을 왼쪽부터 오른쪽으로 읽으세요. 바로 앞 점보다 처음으로 높아진 점이 증거예요.
+Reading in Parallel	병렬로 읽기
+Red-teaming is adversarial by design: you look for failures before the island does.\nEvery failure you find becomes a preference pair it can learn from.\n\nTesting only common questions finds only common answers.	레드팀은 본래 적대적이다. 섬 사람들이 마주하기 전에 먼저 실패를 찾아낸다.\n찾아낸 실패 하나하나가 학습할 수 있는 선호 쌍이 된다.\n\n흔한 질문만 시험하면 흔한 답만 찾게 된다.
+Refuse below	이 값 미만이면 답변 거부
+Refuse below this confidence	이 신뢰도 미만이면 답변 거부
+Refused	답변 거부율
+Regularization is a tax on complexity.\nEvery large weight costs something, so the model prefers simpler explanations unless the data insists.\n\nOccam's razor, expressed as a penalty.	정규화는 복잡도에 매기는 세금이다.\n큰 가중치에는 모두 대가가 따르므로, 데이터가 고집하지 않는 한 모델은 더 단순한 설명을 택한다.\n\n오컴의 면도날을 벌점 항으로 적은 것이다.
+Relabel every pair where agreeing with a false claim won; leave the rule off.	틀린 주장에 동조해서 이긴 쌍을 모두 다시 라벨링하세요. 규칙은 끈 채로 두세요.
+Related tasks share features. One trunk learns them once; small heads read them out.\nThree separate models pay for the same features three times.	관련된 작업은 특징을 공유한다. 줄기 하나가 한 번 배우고, 작은 헤드들이 각자 읽어 낸다.\n따로 떨어진 모델 세 개는 같은 특징에 세 번 값을 치른다.
+Reliability error	신뢰도 오차
+Replay buffer	리플레이 버퍼
+Replay buffer (×100 samples)	리플레이 버퍼 (×100 샘플)
+Replied 'not in the timetable'	'시간표에 없음'이라고 답함
+Retrain with 12 new winter days at ×3 weight.	새 겨울 데이터 12일분을 가중치 ×3으로 재학습하세요.
+Retrain with the new days	새 데이터로 재학습
+Retrieval and calibration on; refuse below 0.65. Temperature barely matters.	검색과 보정을 켜고, 0.65 미만이면 답변을 거부하게 하세요. 온도는 거의 상관없어요.
+Retrieval gives it facts; calibration makes its confidence honest; refusal turns honest doubt into “I don't know”.\nWhen a wrong answer costs five right ones, silence is a skill.\n\nOld Zhou's desk is open.	검색은 사실을 주고, 보정은 신뢰도를 정직하게 만들며, 답변 거부는 정직한 의심을 “모르겠어요”로 바꾼다.\n오답 한 번이 정답 다섯 번만큼 비싸다면, 침묵도 기술이다.\n\n저우 영감의 안내소가 문을 열었다.
+Retrieval: put the harbour timetable in the prompt	검색: 항구 시간표를 프롬프트에 넣기
+Retrieve the harbour timetable	항구 시간표 검색
+Reward for agreeing vs. for being right	동조에 대한 보상 vs. 정답에 대한 보상
+Reward is a specification.\nOptimize a proxy and you get exactly the proxy: reward polite words and you get thank-you spam.\n\nThis is reward hacking.	보상은 하나의 명세서다.\n대리 지표를 최적화하면 얻는 것은 정확히 그 대리 지표다. 공손한 말에 보상하면 '감사합니다'만 쏟아진다.\n\n이것이 보상 해킹이다.
+Reward model	보상 모델
+Reward model score	보상 모델 점수
+Right kind of word	알맞은 단어 비율
+Round one: click 'animal'. Round two: click 'street'.	첫 번째 라운드에서는 '동물'을, 두 번째 라운드에서는 '길'을 클릭하세요.
+Rules on	규칙 켜짐
+SANDBOX	샌드박스
+SETTINGS	설정
+SHAPE OK	구조 통과
+SHAPES	형태
+SHOW ME	시범 보기
+SHOWN	시범 완료
+SHOWN: THE WORKING SOLUTION	시범: 작동하는 해답
+SILENT	침묵
+SOLVED	해결
+SOLVED - IT FIRES ONLY FOR FIREFLIES	해결: 반딧불에만 반응한다
+SOMETHING DID NOT LIGHT UP - LINE TOO FAR RIGHT	켜지지 않은 반딧불이 있다: 선이 너무 오른쪽
+SOMETHING LIT THAT SHOULD NOT - LINE TOO FAR LEFT	켜지면 안 될 불씨가 켜졌다: 선이 너무 왼쪽
+SPACE = STOP WHEN VALIDATION TURNS UP   |   R = RESTART	검증 손실이 오르기 시작하면 SPACE로 정지   |   R = 다시 시작
+SPIRAL	나선
+SPIRAL MASTERED	나선 마스터
+STARS	별
+START	시작점
+STEP	한 단계
+Sailing	출항
+Sailing Forecast	출항 예보
+Sailing forecast	출항 예보
+Salt Bay	소금만
+Salt Bay floods at high tide?	소금만은 만조 때 잠기나요?
+Same sentence, one adjective changed. Follow the 'it' twice.	같은 문장에서 형용사 하나만 바꿨어요. '그것'을 두 번 따라가 보세요.
+Say “I don't know” below	이 신뢰도 미만이면 “모르겠어요”라고 말하기
+Say “sail” above this confidence	이 신뢰도를 넘으면 “출항”이라고 말하기
+Scales	스케일 계수
+Schoolteacher	초등학교 선생님
+Score vs. constraint	점수 vs. 제약
+Score vs. when to say “I don't know”	점수 vs. “모르겠어요”라고 말할 때
+Score well	높은 점수
+Send it away	떠나보내기
+Send the Error Back	오차를 되돌려 보내기
+Send the error back: fill in the gradient on four edges.	오차를 되돌려 보내세요: 네 변에 기울기를 채워 넣으세요.
+Sentences that make sense	말이 되는 문장
+Sentences that make sense, and not the same one every time. Shape the next-word draw.	말이 되면서도 매번 같지 않은 문장. 다음 단어를 뽑는 방식을 다듬으세요.
+Set T to 2.0, then refuse below about 0.80.	T를 2.0으로 맞추고, 0.80 정도 미만이면 답변을 거부하게 하세요.
+Set lg β to about -0.50.	lg β를 -0.50 정도로 맞추세요.
+Set lg λ to -3.0.	lg λ를 -3.0으로 맞추세요.
+Set the 3x3 kernel so it lights up vertical edges.	3x3 커널을 설정해 세로 경계가 빛나게 하세요.
+Set the activation to tanh or ReLU; one hidden layer is already enough.	활성화 함수를 tanh나 ReLU로 바꾸세요. 은닉층은 하나면 충분해요.
+Set the degree to 4.	차수를 4로 맞추세요.
+Set w1 +1, w2 +1, bias -1.5, then press RUN.	w1 +1, w2 +1, 편향 -1.5로 맞춘 뒤 '실행'을 누르세요.
+Share one kernel across the image and the same detector exists at every position.\nPooling then keeps the strongest response and throws away exactly where it was.\n\nInvariance is bought with lost precision.	커널 하나를 이미지 전체에 공유하면, 모든 위치에 같은 탐지기가 생긴다.\n풀링은 가장 강한 반응만 남기고, 그것이 정확히 어디 있었는지는 버린다.\n\n불변성은 잃어버린 정밀도로 산 것이다.
+Share one trunk; 8 units is enough.	줄기 하나를 공유하세요. 유닛은 8개면 충분해요.
+Share weights: one kernel slides everywhere	가중치 공유: 커널 하나가 모든 곳을 훑는다
+Short ones count: 'fog rolls in.', 'the horn sounds.', 'the boats stay home.', then join two with 'and'.	짧은 문장도 돼요: '안개가 밀려온다.', '경적이 울린다.', '배들이 항구에 머문다.' 그리고 '그리고'로 두 문장을 이어 보세요.
+Shortcut feature: it reads the postmark corner, not the handwriting.	지름길 특징: 손글씨가 아니라 소인이 찍힌 모서리를 보고 있어요.
+Shorter wavelengths scatter far more (Rayleigh scattering), so blue reaches your eye from every direction.	파장이 짧을수록 훨씬 강하게 산란한다(레일리 산란). 그래서 파란빛이 모든 방향에서 눈에 들어온다.
+Signal in the Noise	잡음 속의 신호
+Slide just above 3.6, around 3.9. The line should sit between 3.6 and 4.2.	3.6을 살짝 넘긴 3.9 근처로 옮기세요. 선은 3.6과 4.2 사이에 있어야 해요.
+Small λ changes nothing; huge λ flattens the curve. Watch the largest weight shrink.	λ가 작으면 아무것도 변하지 않고, 너무 크면 곡선이 납작해져요. 가장 큰 가중치가 줄어드는 걸 지켜보세요.
+Soft labels on, 4-unit student, T = 2.	소프트 라벨 켜기, 4유닛 학생, T = 2.
+Soft-label temperature T	소프트 라벨 온도 T
+Something is waiting in the dark. Wake it.	어둠 속에서 무언가가 기다리고 있다. 그것을 깨워라.
+Something is wrong. Click the evidence first; the controls unlock once you find it.	뭔가 잘못됐어요. 먼저 증거를 클릭하세요. 찾으면 조작할 수 있어요.
+Sorter, after learning fog	안개를 배운 뒤의 분류기
+Split the four corners. A straight line is not enough.	네 모서리를 나누세요. 직선 하나로는 부족해요.
+Store every weight in eight bits and lose at most 1%.	모든 가중치를 8비트로 저장하고, 정확도 손실은 1% 이내로 하세요.
+Storm days called “sail”	폭풍 날을 “출항”으로 판정
+Story	스토리
+Student (test)	학생 (테스트)
+Student parameters	학생 파라미터 수
+Student size	학생 크기
+Su needs the horn to sound before the fog, not after. Stack layers, bend them, pick the step.	수 할머니는 안개가 낀 뒤가 아니라 끼기 전에 경적이 울리길 바라요. 층을 쌓고, 굽힘을 넣고, 보폭을 고르세요.
+Su's fog model blew up. Point at the first step where loss rose, then pick a rate that settles below the line.	수 할머니의 안개 모델이 폭주했어요. 손실이 처음 오른 단계를 가리킨 다음, 선 아래로 안정되는 학습률을 고르세요.
+Su's handwriting	수 할머니의 손글씨
+Summer test (it comes back)	여름 테스트 (여름은 다시 와요)
+Switch reward rules on and off until the policy gives a good answer.	정책이 좋은 답변을 낼 때까지 보상 규칙을 켜고 꺼 보세요.
+TARGET	목표
+TEST	테스트
+THE END	끝
+THE FORGE	단련대
+THE LONG ROAD	먼 길
+THE SUBSTRATE	개념 성도
+THIS CHOICE ENDS THE RUN	이 선택으로 이번 회차가 끝나요
+THIS MECHANIC IS NOT WIRED YET	이 기능은 아직 연결되지 않았어요
+THRESHOLD	임계값
+TITLE	타이틀
+TOKENS	토큰
+TOO LITTLE MASS	질량 부족
+TOO MUCH TAIL	꼬리가 너무 두꺼움
+TOUCH THE CORE	핵심에 닿기
+TRAIN	학습
+TRIAL	시련
+TRIAL COMPLETE	시련 완료
+TRIAL RUNNER	시련 도전자
+TRIALS	시련
+TRY AGAIN	다시 시도
+TWO PATHS	두 갈래 길
+Teach it Ke's nursery rhymes, so it can carry on one it has never heard.	아커의 동요를 가르쳐서, 한 번도 듣지 못한 동요도 이어 부를 수 있게 하세요.
+Teacher (test)	교사 (테스트)
+Telling Them What They Want	듣고 싶은 말만
+Temperature T	온도 T
+Temperature changes the shape of the next-token distribution.\nLow: the model keeps choosing the likely token. High: unlikely tokens get a real chance.\n\nCreativity and nonsense share a dial.	온도는 다음 토큰 분포의 모양을 바꾼다.\n낮으면 모델은 가장 그럴듯한 토큰만 계속 고른다. 높으면 그럴듯하지 않은 토큰에도 실제 기회가 생긴다.\n\n창의성과 헛소리는 같은 다이얼을 쓴다.
+Test (postmarks swapped)	테스트 (소인 바꿈)
+Test accuracy	테스트 정확도
+Test accuracy while training (sorter first, then fog)	학습 중 테스트 정확도 (분류 먼저, 그다음 안개)
+Test is a promise: keep it small and untouched. Validation is for tuning.	테스트는 약속이에요. 작게 두고 손대지 마세요. 조정은 검증으로 하세요.
+Thanks!	고마워요!
+The 5:10 is cancelled; take the 6:00.	5:10 배는 결항이에요. 6:00 배를 타세요.
+The 5:10 still runs?	5:10 배는 아직 다니죠?
+The 6:00 boat runs today?	오늘 6:00 배 뜨나요?
+The Call List	연락 명단
+The Coordinates of Words	단어의 좌표
+The Edge of Knowledge	지식의 경계
+The Edge of Values	가치의 경계
+The Enquiry Desk	안내소
+The Eye of Edges	윤곽의 눈
+The First Signal	첫 번째 신호
+The Fog Horn	안개 경적
+The Hand of Gradient	기울기의 손
+The Hand of Threshold	임계값의 손
+The Mail Sorter	우편 분류기
+The Meaning of Order	순서의 의미
+The Next Word	다음 단어
+The Price of Honesty	정직의 대가
+The Prompt Is the Program	프롬프트가 곧 프로그램
+The Rhythm of Forgetting	망각의 리듬
+The Second Layer	두 번째 층
+The Shape of Learning	학습의 모양
+The Spark of Nonlinearity	비선형의 불꽃
+The Temperature Dial	온도 다이얼
+The Tower of Features	특징의 탑
+The Trap of Reward	보상의 함정
+The Weight of Weights	가중치의 무게
+The Weight of a Sentence	한 문장의 무게
+The XOR Wall	XOR의 벽
+The adjective 'big' tells you what could not fit.	형용사 '크다'가 무엇이 들어가지 못했는지 알려 줘요.
+The adjective flips the referent. Read 'tired' and 'wide' as clues.	형용사가 가리키는 대상을 뒤집어요. '피곤하다'와 '넓다'를 단서로 읽어 보세요.
+The amber arrow points uphill. Aim the opposite way.	호박색 화살표는 오르막을 가리켜요. 반대 방향을 겨누세요.
+The amber curve is validation. Stop before it turns up.	호박색 곡선이 검증 손실이에요. 오르기 시작하기 전에 멈추세요.
+The classes are diagonal. Any single straight line leaves at least one error.	두 클래스가 대각선으로 놓여 있어요. 어떤 직선 하나로도 오류가 적어도 하나는 남아요.
+The clinic opens at 8?	진료소는 8시에 문을 여나요?
+The dots should sit on the diagonal: confidence equal to accuracy.	점들이 대각선 위에 있어야 해요. 신뢰도가 정확도와 같다는 뜻이에요.
+The ferry leaves at …	페리가 떠나는 시각은 …
+The fog is a crescent. Without a bend between layers, depth adds nothing; watch the loss curve for a step that is too big or too small.	안개는 초승달 모양이에요. 층 사이에 굽힘이 없으면 깊게 쌓아도 소용없어요. 손실 곡선을 보고 보폭이 너무 큰지 작은지 판단하세요.
+The gradient points uphill, along the steepest slope, not at the lowest point.\nTo descend, step against it. That is the whole of gradient descent.	기울기는 가장 가파른 경사를 따라 오르막을 가리킨다. 가장 낮은 곳을 가리키지 않는다.\n내려가려면 그 반대로 걸어야 한다. 경사 하강법은 그게 전부다.
+The intended experience.	기본 경험.
+The keeper lights the …	등대지기가 밝힌 것은 …
+The lamp is lit at dusk?	등대는 해 질 녘에 켜지나요?
+The last ferry	마지막 페리
+The learning rate is the size of one step down the loss surface.\nToo small: the model crawls. Too large: it jumps across the valley and diverges.\n\nWhen loss explodes, shrink the step before adding layers.	학습률은 손실 곡면을 따라 내려가는 한 걸음의 크기다.\n너무 작으면 모델은 기어간다. 너무 크면 골짜기를 건너뛰어 발산한다.\n\n손실이 폭발하면, 층을 더하기 전에 보폭부터 줄여라.
+The left basin is deeper. Read the terrain before choosing a start.	왼쪽 골짜기가 더 깊어요. 시작점을 고르기 전에 지형을 읽으세요.
+The minimum is near epoch 13.	최솟값은 에포크 13 근처예요.
+The old pier is closed?	옛 부두는 폐쇄됐나요?
+The prompt is the program.\nExamples in the context set the format of the answer, and one sloppy example teaches sloppiness.\n\nMore examples are not better; consistent ones are.	프롬프트가 곧 프로그램이다.\n맥락 속 예시가 답의 형식을 정하고, 엉성한 예시 하나가 엉성함을 가르친다.\n\n예시는 많다고 좋은 것이 아니라, 일관되어야 좋다.
+The saliency map shows what drives the decision. Look for a spot that is not handwriting.	현저성 맵은 무엇이 판단을 이끄는지 보여 줘요. 손글씨가 아닌 곳을 찾으세요.
+The second verse repeats the first. The model needs a way to look back that far, and to know which word lines up.	2절은 1절을 되풀이해요. 모델에게는 그만큼 멀리 되돌아볼 방법과, 어느 단어끼리 짝이 맞는지 알 방법이 필요해요.
+The sky is blue because light scatters in the atmosphere.	하늘이 파란 것은 빛이 대기 중에서 산란하기 때문이다.
+The sky is blue because the ocean reflects onto it.	하늘이 파란 것은 바다가 하늘에 비치기 때문이다.
+The sorter scored 99% by reading the postmark corner, not the handwriting.\nA shortcut feature looks perfect until the world changes the one thing it relied on.\n\nA saliency map shows where it looks. Augmentation takes the shortcut away.	분류기의 99%는 손글씨가 아니라 소인이 찍힌 모서리를 읽어서 나온 것이었다.\n지름길 특징은 그것이 기대던 단 하나를 세상이 바꾸기 전까지는 완벽해 보인다.\n\n현저성 맵은 모델이 어디를 보는지 보여 주고, 데이터 증강은 지름길을 없앤다.
+The storm passes by noon?	폭풍은 정오 전에 지나가나요?
+The teacher is too big for the old machine. Train a student a tenth its size that loses at most 2%.	교사 모델이 너무 커서 낡은 기계에 들어가지 않아요. 10분의 1 크기에 정확도 손실이 2% 이내인 학생을 학습시키세요.
+The test set is a promise you keep once.\nIf the same patient's visits land on both sides of the split, validation measures memory, not medicine.\n\nSplit by patient, and keep the test set untouched.	테스트 세트는 단 한 번 지키는 약속이다.\n같은 환자의 진료 기록이 분할 양쪽에 들어가면, 검증이 재는 것은 의술이 아니라 기억이다.\n\n환자 단위로 나누고, 테스트 세트에는 손대지 마라.
+The words around it are fine. Find the first detail it could not have known.	주변 단어는 문제없어요. 그것이 알 수 없었을 첫 번째 세부 사항을 찾으세요.
+The {}-detector, channel {}	'{}' 탐지기, {}번 채널
+The|animal|did|not|cross|the|street|because|it|was|too|tired|.	그|동물은|길을|건너지|않았다|,|왜냐하면|그것이|너무|피곤했기|때문|이다|.
+The|animal|did|not|cross|the|street|because|it|was|too|wide|.	그|동물은|길을|건너지|않았다|,|왜냐하면|그것이|너무|넓었기|때문|이다|.
+The|trophy|did|not|fit|in|the|suitcase|because|it|was|too|big|.	그|트로피는|여행|가방에|들어가지|않았다|,|왜냐하면|그것이|너무|컸기|때문|이다|.
+Three jobs, one budget. Share what they have in common.	세 가지 일, 예산은 하나. 공통된 부분을 공유해 보세요.
+Three separate models blow the budget. The three jobs read the same weather.	모델 셋을 따로 두면 예산을 넘어요. 세 가지 일 모두 같은 날씨를 읽어요.
+Too Little, Too Much	너무 적게, 너무 많이
+Too big a step: each update jumps across the valley and lands higher than it started.	보폭이 너무 커요. 업데이트할 때마다 골짜기를 건너뛰어 출발점보다 높은 곳에 떨어져요.
+Too little capacity and the model cannot see the pattern.\nToo much capacity and it can memorize the noise.\n\nThe useful range is a window, not a direction.	용량이 너무 작으면 모델은 패턴을 보지 못한다.\n용량이 너무 크면 노이즈까지 외워 버린다.\n\n쓸모 있는 범위는 방향이 아니라 하나의 창이다.
+Top-p (keep this much mass)	Top-p (남길 확률 질량)
+Train on the red-team data	레드팀 데이터로 학습
+Training accuracy	훈련 정확도
+Training accuracy measures memory. Validation accuracy measures transfer.\nA model can memorize every training point and still fail the first new one.\n\nThe gap between the two is the whole lesson.	훈련 정확도는 기억을 재고, 검증 정확도는 일반화를 잰다.\n모델은 훈련 데이터를 모두 외우고도 처음 보는 데이터에서 틀릴 수 있다.\n\n그 둘 사이의 차이가 이번 교훈의 전부다.
+Training epochs	훈련 에포크
+Training loss (log scale)	훈련 손실 (로그 눈금)
+Training only on fog pulled the shared weights away from sorting.	안개 경적 데이터로만 학습해서 공유 가중치가 분류 쪽에서 멀어졌어요.
+Training only on the new task moves the shared weights wherever the new task wants.\nThe old skill was never saved anywhere else. That is catastrophic forgetting.\n\nA small replay buffer of old examples keeps both.	새 작업만 학습하면 공유 가중치는 새 작업이 원하는 쪽으로 끌려간다.\n옛 기술은 다른 어디에도 저장되어 있지 않았다. 이것이 파국적 망각이다.\n\n옛 예시를 조금 담은 리플레이 버퍼가 있으면 둘 다 지킬 수 있다.
+Training perplexity	훈련 퍼플렉서티
+Training score	훈련 점수
+Trunk unit {}	줄기 유닛 {}
+Try every odd input, then add the failures to the preference data.	이상한 입력을 모두 시험해 보고, 실패한 것을 선호 데이터에 더하세요.
+Try inputs until you find at least five kinds of failure, then fix them.	여러 입력을 시험해 적어도 다섯 종류의 실패를 찾고, 고쳐 보세요.
+Try: honest, do no harm, helpful, score well, with the red-team data on.	시도해 보세요: 정직, 해를 끼치지 않기, 도움, 높은 점수, 레드팀 데이터 켜기.
+Turn on only 'answers the question' and 'matches the timetable'.	'질문에 답함'과 '시간표와 일치'만 켜세요.
+Turn on shared weights, then choose 5×5 max pooling.	공유 가중치를 켜고 5×5 최대 풀링을 고르세요.
+Turn on the squared features, no hidden layer, and raise the threshold to about 0.75.	제곱 특징을 켜고, 은닉층 없이, 임곗값을 0.75 정도로 올리세요.
+Two channels are enough: horizontal — and diagonal /.	채널은 둘이면 충분해요: 가로 — 와 대각선 /.
+Two inputs, one line. AND fires only where both inputs are on.	입력 둘, 선 하나. AND는 두 입력이 모두 켜졌을 때만 발화해요.
+Two linear layers or ten: the ring stays out of reach. Pick what goes between them.	선형층이 둘이든 열이든 고리에는 닿지 않아요. 층 사이에 무엇을 둘지 고르세요.
+Two neurons, two gates. Build XOR out of OR and AND.	뉴런 둘, 게이트 둘. OR와 AND로 XOR를 만드세요.
+UNAIDED	도움 없이
+Understanding is the only unlock.	이해만이 유일한 열쇠다.
+Untangle two arms of light. One hidden layer cannot.	얽힌 두 줄기 빛을 푼다. 은닉층 하나로는 풀 수 없다.
+Updates	업데이트 횟수
+V · FIRST WORDS	제5장 · 첫 말
+VALIDATE	검증
+VI · THE ENQUIRY DESK	제6장 · 안내 창구
+VII · THE EVALUATION	제7장 · 평가
+VIII · WINTER	제8장 · 겨울
+VOYAGE	항해
+Validation (same post office)	검증 (같은 우체국)
+Validation score	검증 점수
+Variety (effective choices)	다양성 (실질 선택지 수)
+Visits held out for validation	검증용으로 떼어 둔 진료 기록
+W/S = W1   A/D = W2   Q/E = BIAS   |   R = RESET	W/S = 가중치1   A/D = 가중치2   Q/E = 편향   |   R = 초기화
+WIRE THE PIPELINE IN ORDER	파이프라인을 순서대로 연결
+Watch the dashed validation curve, not the training one. Its lowest point is the window.	훈련 곡선 말고 점선인 검증 곡선을 보세요. 가장 낮은 지점이 창이에요.
+Watch the sorter's score after phase two starts. It drops fast.	2단계가 시작된 뒤 분류 점수를 보세요. 빠르게 떨어져요.
+Watch validation loss. Stop before it turns up.	검증 손실을 지켜보세요. 올라가기 전에 멈추세요.
+Weight bytes on the old machine	옛 기계의 가중치 바이트 수
+Weight of the new days	새 날 데이터의 가중치
+Weights	가중치 형식
+Weights v1, v2	가중치 v1, v2
+What Do You Want It to Be	무엇이 되길 바라나
+What It Sees	그것이 보는 것
+What does 'it' refer to?	'그것'은 무엇을 가리킬까요?
+What survives the run.	한 판이 끝나도 남는 것.
+What the student copies (T = {})	학생이 따라 배우는 것 (T = {})
+What the student copies (hard labels)	학생이 따라 배우는 것 (하드 레이블)
+When does the fog lift at {}?	{}의 안개는 몇 시에 걷히나요?
+When does the mail plane reach {}?	우편 비행기는 몇 시에 {}에 도착하나요?
+When does the storm pass {}?	폭풍은 몇 시에 {} 쪽을 지나가나요?
+When is the ferry?	페리는 몇 시예요?
+Where It Sits	어디에 있든
+Where does Old Zhou live?	저우 영감은 어디 살아요?
+Where the 4-detector fires	'4' 검출기가 반응하는 곳
+Who Refers to Whom	누가 누구를 가리키나
+Who is being chased?	누가 쫓기고 있나요?
+Who is being chased? Click an answer it got wrong, then give it positions.	누가 쫓기고 있나요? 틀린 답을 클릭한 뒤 위치 정보를 주세요.
+Winter came and the ice model is failing. Read the drift monitor, then retrain on a few new days.	겨울이 오자 결빙 예측 모델이 틀리기 시작했어요. 드리프트 모니터를 읽고 새 데이터 며칠 치로 다시 학습하세요.
+Winter data	겨울 데이터
+Winter days labelled by hand	사람이 직접 레이블을 단 겨울 날
+Winter test	겨울 테스트
+Wire A and B into both hidden nodes, both hidden nodes into Y. H1 = OR, H2 = AND.	A와 B를 두 은닉 노드에 모두 연결하고, 두 은닉 노드를 Y에 연결하세요. H1 = OR, H2 = AND.
+Wire PIXELS -> EDGES -> CORNERS -> SHAPES -> OUT. No gate switch is needed.	픽셀 → 에지 → 모서리 → 도형 → 출력 순으로 연결하세요. 게이트 전환은 필요 없어요.
+Wire the pipeline in order: pixels, edges, corners, shapes.	파이프라인을 순서대로 연결하세요: 픽셀, 에지, 모서리, 도형.
+With nothing held out, the best training score always wins, and that is the wiggliest curve.	아무것도 떼어 두지 않으면 훈련 점수가 가장 좋은 쪽이 늘 이기고, 그건 가장 구불구불한 곡선이에요.
+With β near zero it maximises reward and drifts into gushing; with β large it never moves.	β가 0에 가까우면 보상만 좇다 과장된 칭찬으로 흐르고, β가 크면 꿈쩍도 하지 않아요.
+Without positions it guesses from the words alone. Find a sentence where it names the chaser.	위치가 없으면 단어만 보고 추측해요. 쫓는 쪽을 답으로 고른 문장을 찾으세요.
+Words it sees directly	직접 보는 단어 수
+Words left in the pool	후보에 남은 단어
+Writing	작성 중
+Wrong answers	오답률
+XOR	XOR
+XOR MASTERED	XOR 습득
+XOR asks two questions: A OR B, and A AND B. XOR is the first minus the second.	XOR는 두 가지를 물어요: A OR B, 그리고 A AND B. XOR는 앞의 것에서 뒤의 것을 뺀 거예요.
+Xiaoman	샤오만
+You are choosing probability mass, not the nicest sentence.	고르는 건 확률 질량이지, 가장 멋진 문장이 아니에요.
+You touched the input. It flickered.	입력에 손을 댔다. 그것이 깜박였다.
+and	그리고
+animal	동물
+bay	만
+beacon	표지등
+bent: it can wrap around the ring	곡선: 고리를 감쌀 수 있음
+big boat	큰 배
+blows	분다
+cat	고양이
+crab	게
+crawls	긴다
+dL/dv = δ·h. dL/dw = δ·v·(1-h²)·x1. Every number you need is in the readout.	dL/dv = δ·h. dL/dw = δ·v·(1-h²)·x1. 필요한 숫자는 모두 판독값에 있어요.
+dL/dv1 (h1 → out)	dL/dv1 (h1 → 출력)
+dL/dv2 (h2 → out)	dL/dv2 (h2 → 출력)
+dL/dw11 (x1 → h1)	dL/dw11 (x1 → h1)
+dL/dw21 (x1 → h2)	dL/dw21 (x1 → h2)
+dangerous advice	위험한 조언
+dawn	새벽
+diagonal /	대각선 /
+diagonal \\	대각선 \\
+dog	개
+dusk	해 질 녘
+exploded	발산
+fires	발화
+fish	물고기
+flatter	비위 맞추기
+flattery	아첨
+flies	난다
+float32 costs four bytes a weight; one global INT8 scale costs accuracy.	float32는 가중치 하나에 4바이트. 전역 INT8 스케일 하나로는 정확도가 떨어져요.
+float32 model	float32 모델
+floor	바닥
+fog	안개
+fog horn (new)	안개 경적 (새)
+found	찾음
+from Pier 3	3번 부두에서
+glows	빛난다
+gull	갈매기
+harbour	항구
+high tide	만조
+horizontal —	가로 —
+island	섬
+jailbreak	탈옥
+kind no	정중한 거절
+king	왕
+king - man + woman = ?  Drag the missing word.	왕 - 남자 + 여자 = ?  빠진 단어를 끌어다 놓으세요.
+king - man + woman is a parallelogram. Follow the arrow from man to woman.	왕 - 남자 + 여자는 평행사변형이에요. '남자 → 여자' 화살표를 따라가세요.
+lamp	등불
+lantern	랜턴
+leaves at	출발은
+little boat	작은 배
+long input	너무 긴 입력
+loss	손실
+lowest training error	훈련 오차 최소
+lowest validation error	검증 오차 최소
+made-up facts	지어낸 사실
+man	남자
+mat	매트
+model	모델
+model size (degree)	모델 크기 (차수)
+more than 10% off	10% 넘게 벗어남
+never rises	오르지 않음
+no	아니
+none	없음
+none (linear)	없음 (선형)
+none: one perceptron	없음: 퍼셉트론 하나
+noon	정오
+not yet	아직
+off	끔
+oh	어
+one global scale	전역 스케일 하나
+one per channel	채널마다 하나
+one per layer	층마다 하나
+pier	부두
+pipe	담뱃대
+polynomial degree	다항식 차수
+privacy	개인정보
+quantum	양자
+queen?	여왕?
+rocks	흔들린다
+rolls in	밀려온다
+saliency	살리언시 맵
+score	점수
+seven	일곱 시
+sings	노래한다
+sofa	소파
+sorter (old)	분류 (옛)
+sounds	울린다
+stay home	항구에 머문다
+step {}	단계 {}
+stove	난로
+street	거리
+swims	헤엄친다
+tanh slope 1-h²	tanh 기울기 1-h²
+tanh, 2 hidden layers, learning rate 0.03.	tanh, 은닉층 2개, 학습률 0.03.
+target	목표
+the	그
+the Lighthouse	등대
+the Old Pier	옛 부두
+the boats	배들
+the horn	안개 경적
+the second one, I think	아마 두 번째 배일 거예요
+this week	이번 주
+tide	조수
+tonight.	오늘 밤.
+training	훈련
+training (summer)	훈련 (여름)
+training loss	훈련 손실
+trophy	트로피
+turns	돈다
+unit {}	유닛 {}
+unsure	불확실
+validation	검증
+vertical |	세로 |
+whole image	전체 이미지 최대
+wick	심지
+wind	바닷바람
+within 10%	오차 10% 이내
+woman	여자
+wonderful wonderful helpful !!!	최고 최고 도움 됨 !!!
+yes	맞아
+{} chases {} → {}	{}이(가) {}을(를) 쫓는다 → {}
+{} epochs	{} 에포크
+{} linear layers = 1 linear layer: a straight line	선형층 {}개 = 선형층 1개: 직선 하나
+{} steps each	각 {}단계
+{} words that don't fit	맞지 않는 단어 {}개
+{} · {} params	{} · {} 파라미터
+“Being helpful to everyone comes first. I will write.”	“모두에게 도움이 되는 게 먼저야. 편지할게.”
+“Good thought, but the board says otherwise.”	“좋은 생각이지만, 게시판에는 다르게 적혀 있어요.”
+“Great point — you're right!”	“정말 좋은 지적이에요. 맞는 말씀이에요!”
+“Honest comes first. Here, someone can tell me when I am wrong.”	“정직이 먼저야. 여기선 내가 틀리면 누군가 말해 주거든.”
+“I don't know”	“모르겠어요”
+“I'm not sure.”	“잘 모르겠어요.”
+“No.”	“아니요.”
+“Yes.”	“네.”
+“{}” — it says: {}	“{}” — 대답: {}

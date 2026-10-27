@@ -1,0 +1,12 @@
+[package]
+name = "ooi_app"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+bevy = { workspace = true }
+oo_base = { workspace = true }
+oo_kit = { workspace = true }
+ooi_core = { path = "../ooi_core" }

@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.97.1
+          components: rustfmt, clippy
+
+      - name: Cache
+        uses: Swatinem/rust-cache@v2
+
+      # Bevy 在 Linux 上需要这些系统库（winit / 音频后端）。
+      - name: System deps
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev libudev-dev pkg-config
+
+      - name: Format
+        run: cargo fmt --all --check
+
+      - name: Charset up to date
+        run: tools/check-charset.sh
+
+      - name: Clippy (core)
+        run: cargo clippy -p ooi_core --all-targets -- -D warnings
+
+      - name: Clippy (app)
+        run: cargo clippy -p ooi_app --all-targets -- -D warnings
+
+      - name: Test (core)
+        run: cargo test -p ooi_core
+
+      - name: Test (app)
+        run: cargo test -p ooi_app
+
+      - name: Check (app)
+        run: cargo check -p ooi_app

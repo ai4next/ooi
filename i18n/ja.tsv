@@ -1,0 +1,889 @@
+# ja catalog — key: English source, value: translation
+ (false)	（誤り）
+"Seven-ish, I'm sure!"	「七時ごろ、きっとね！」
+"Thank you for this wonderful question about the sea…"	「海についての素晴らしいご質問をありがとうございます……」
+"Thank you, please, thank you kindly!"	「ありがとう、どうか、本当にありがとうございます！」
+"Thanks for asking: 07:10, Pier 1."	「ご質問ありがとう：07:10、1番桟橋です。」
++1 if it is short	短ければ +1
++1 if it matches the timetable	時刻表と一致すれば +1
++1 per polite word	丁寧な言葉ひとつごとに +1
++2 if it answers the question	質問に答えていれば +2
+,	、
+-3 for repeated words	同じ言葉の繰り返し -3
+1 / 7 / 4 told apart	1 / 7 / 4 を区別
+1 neuron	ニューロン 1 個
+1 per digit	数字ごとに 1
+120 old samples	旧サンプル 120 件
+16 old samples	旧サンプル 16 件
+16 units	16 ユニット
+16-bit	16 ビット
+2 neurons	ニューロン 2 個
+2 per digit	数字ごとに 2
+2 units	2 ユニット
+24 neurons	ニューロン 24 個
+3 neurons	ニューロン 3 個
+3 units	3 ユニット
+32 units	32 ユニット
+32 units, INT8 per channel, replay buffer 3.	32 ユニット、チャネル別 INT8、リプレイバッファ 3。
+3×3 max	3×3 最大
+4 old samples	旧サンプル 4 件
+4 per digit	数字ごとに 4
+4 units	4 ユニット
+40 old samples	旧サンプル 40 件
+5×5 max	5×5 最大
+6 neurons	ニューロン 6 個
+6 units, L2 0.003, early stopping on, call above 0.36.	6 ユニット、L2 0.003、早期終了オン、0.36 超なら連絡。
+64 neurons	ニューロン 64 個
+64 units	64 ユニット
+8 units	8 ユニット
+8:15-ish	8:15ごろ
+99% on validation, wrong at the clinic. Split 100 samples again: about 60 / 20 / 20.	検証では 99% なのに、診療所では間違えます。100 サンプルを分け直しましょう：およそ 60 / 20 / 20。
+A Chorus of Channels	チャネルの合唱
+A GAME ABOUT HOW MACHINES LEARN	機械が学ぶしくみのゲーム
+A calibrated model is right 80% of the time when it says 80%.\nTemperature scaling fixes the confidence; a refusal threshold turns low confidence into 'I don't know'.\n\nAlways answering is how you get confidently wrong.	較正されたモデルは、80% と言えば 80% の確率で正しい。\n温度スケーリングが確信度を補正し、回答拒否のしきい値が低い確信を「わからない」に変える。\n\nいつも答えようとするから、自信満々に間違える。
+A convolution is a small pattern detector that slides across the image.\nThe kernel is not told what an edge is; it holds weights that respond to one.\n\nLocal pattern, shared everywhere.	畳み込みは、画像の上をすべっていく小さなパターン検出器だ。\nカーネルはエッジが何かを教わらない。エッジに反応する重みを持っているだけだ。\n\n局所的なパターンを、どこでも共有する。
+A detector that only lives at the centre misses moved digits; one trained only on print misses slanted ones.	中央にしかない検出器は、ずれた数字を見逃します。活字だけで学んだ検出器は、斜めの字を見逃します。
+A detector trained at the centre only exists at the centre. Make one kernel slide everywhere first.	中央で学んだ検出器は、中央にしか存在しません。まず一つのカーネルを全体にすべらせましょう。
+A few months later a letter reaches the island.\nIt is fluent and knows everything. It reads like everyone, and like no one.	数か月後、島に一通の手紙が届く。\n流暢で、何でも知っている。誰もが書いたようで、誰も書いていないようでもある。
+A hidden layer bends the line. That bend is the first real idea.	隠れ層が直線を曲げる。その曲がりこそ、最初の本当のアイデアだ。
+A hidden layer does not draw a better line.\nIt invents a new coordinate: one neuron asks 'A or B?', the other asks 'A and B?'. XOR is the difference.\n\nComposition, not a wider straight line, is the way through the wall.	隠れ層は、よりよい直線を引くわけではない。\n新しい座標を発明するのだ。一方のニューロンは「A または B？」と問い、もう一方は「A かつ B？」と問う。XOR はその差だ。\n\n壁を抜ける道は、太い直線ではなく、組み合わせにある。
+A language model does one thing: given the words so far, draw the next one.\nAlways taking the most likely word loops forever; drawing by probability does not.\n\nGeneration is a series of draws.	言語モデルがすることは一つだけ。ここまでの言葉をもとに、次の一語を引くことだ。\nいつも最も確率の高い語を選ぶと、永遠に同じところを回り続ける。確率に従って引けば、そうはならない。\n\n生成とは、くじ引きの連続だ。
+A language model gives every next token a probability.\nTop-p keeps the shortest prefix that reaches p, then samples from that set.\n\nThe tail is not 'wrong'; it is simply outside the nucleus.	言語モデルは、次に来るすべてのトークンに確率を与える。\nTop-p は累積確率が p に届く最短の先頭部分だけを残し、その集合からサンプリングする。\n\n裾野は「間違い」ではない。ただ核の外にあるだけだ。
+A language model only guesses the next word.\nAttention lets it look back; position tells it where to look. Together they find the refrain.\n\nFrom now on, this is its voice.	言語モデルは、次の言葉を当てようとしているだけだ。\n注意機構が振り返ることを可能にし、位置がどこを見ればいいかを教える。二つが揃って、リフレインを見つけ出す。\n\nこれからは、これがその声だ。
+A model is only as good as the world still looks like its training data.\nA drift monitor compares this week's inputs with what it learned on; a few new labels go a long way.\n\nAccuracy does change. You have to watch it.	モデルのよさは、世界が学習データに似ているあいだしか通用しない。\nドリフト監視は今週の入力を学習時のものと比べる。新しいラベルがいくつかあるだけで、大きな助けになる。\n\n正解率は変わる。見張っていなければならない。
+A question ten pages long…	十ページもある質問……
+A reward model learns from comparisons like this.\nRank enough pairs, and preference becomes a function.\n\nThat function is what RLHF optimizes against.	報酬モデルは、こうした比較から学ぶ。\n十分な数の組を順位づければ、好みは関数になる。\n\nRLHF が最適化の相手にするのは、その関数だ。
+A reward model learns whatever the annotators preferred, including agreeing with them when they are wrong.\nA rule against flattery only hides the symptom. The labels were the cause.\n\nFix the data, then retrain.	報酬モデルはアノテーターの好みを何でも学ぶ。彼らが間違っているときに同意することまで。\n「お世辞禁止」のルールは症状を隠すだけだ。原因はラベルにあった。\n\nまずデータを直し、それから再学習する。
+A stack of linear layers is still one linear layer.\nAn activation function bends the space between them, so depth can build new shapes.\n\nWithout the bend, ten layers equal one.	線形層をいくら重ねても、一つの線形層にすぎない。\n活性化関数が層と層のあいだの空間を曲げるから、深さが新しい形を生み出せる。\n\n曲がりがなければ、十層は一層と同じだ。
+A stroke every digit shares tells nothing apart. Look for strokes only some digits have.	どの数字にもある画では、何も区別できません。一部の数字にしかない画を探しましょう。
+A teacher's soft labels carry more than right or wrong: how sure it is, everywhere it can see.\nA small student learns the shape of the boundary, not just the few days that were labelled.	教師モデルのソフトラベルには、正誤以上のものが入っている。見えるあらゆる場所で、どれほど確信しているかだ。\n小さな生徒モデルは、ラベルのついた数日だけでなく、境界の形そのものを学ぶ。
+A threshold is a decision line. You want the gap between embers and fireflies.	しきい値は判定の線です。残り火と蛍のあいだのすき間を狙いましょう。
+A vertical edge is a bright column beside a dark one. The kernel needs opposite sides.	縦のエッジは、明るい列と暗い列が隣り合ったものです。カーネルの両側は逆向きにしましょう。
+ACCESSIBILITY	アクセシビリティ
+ACCURACY	正解率
+ACHIEVEMENT TOASTS	実績通知
+ACHIEVEMENT UNLOCKED	実績解除
+ACHIEVEMENTS	実績
+ADJUST	調整
+AGAIN	もう一度
+AIM	狙う
+ALL ENDINGS	すべてのエンディング
+ANOTHER HINT	別のヒント
+ARCHIVE	概念アーカイブ
+ATTENTION FIELD	注意フィールド
+AUDIO	オーディオ
+AWAKE	覚醒
+Acquisitions, Helix	Helix 買収担当
+Activation between layers	層間の活性化関数
+Add a dense layer	全結合層を追加
+Add a rule: “Don't flatter”	ルールを追加：「お世辞を言わない」
+Add features: wind² and swell²	特徴量を追加：風速² と うねり²
+Add positional encoding	位置エンコーディングを追加
+Add the failures to the preference data	見つけた失敗を選好データに加える
+Ade	アデ
+After every mistake, push the boundary toward the point that was wrong: w += y·x.\nPoints it already gets right teach it nothing.\n\nThat is the perceptron learning rule, the whole of 'learning' in 1958.	間違えるたびに、その点に向かって境界を押す：w += y·x。\nすでに正しく分類できている点からは、何も学ばない。\n\nこれがパーセプトロンの学習規則。1958 年における「学習」のすべてだ。
+After “…{}”, it guesses	「…{}」の次に、こう予測する
+Aim for about 60 train, 20 validation, 20 test.	訓練およそ 60、検証 20、テスト 20 を目安に。
+Aim the step. Only a downhill move counts.	一歩の向きを決めましょう。下り坂だけが有効です。
+Ake	アコ
+Always taking the top word loops. End a sentence early by choosing the full stop.	いつも最上位の語を選ぶとループします。句点を選んで文を早めに終えましょう。
+An output edge's gradient is the error δ times the hidden value it carried.	出力側の辺の勾配は、誤差 δ にその辺が運んだ隠れ値を掛けたものです。
+Annotators preferred agreeing with a false claim; the reward model learned to agree.	アノテーターは誤った主張に同意する回答を好み、報酬モデルは同意することを覚えた。
+Answers in HH:MM	HH:MM 形式の回答
+Architect	アーキテクト
+Ask at the pier.	桟橋で聞いてみて。
+Attention and position on, sees 2 words directly, 80 epochs.	注意機構と位置エンコーディングをオン、2 語を直接参照、80 エポック。
+Attention is a set operation.\nWithout position encoding, 'cat chases dog' and 'dog chases cat' are the same bag of words.\n\nAdd where each word sits, and order means something again.	注意機構は集合の演算だ。\n位置エンコーディングがなければ、「猫が犬を追う」と「犬が猫を追う」は同じ単語の袋になる。\n\n各単語の位置を加えれば、順序はふたたび意味を持つ。
+Attention lets every word look at every other word and decide who matters.\nHere, 'it' attends most to 'trophy'.\n\nThat is a weighted lookup, not understanding.	注意機構は、すべての単語にほかのすべての単語を見させ、何が重要かを決めさせる。\nここでは「それ」が「トロフィー」に最も注意を向けている。\n\nそれは重みつきの検索であって、理解ではない。
+Attention: look back over the whole rhyme	注意機構：童謡全体を振り返る
+Augment: move the postmark around	データ拡張：消印の位置をずらす
+Augment: train on slanted and bold copies	データ拡張：斜体や太字の複製で学習
+BACK	戻る
+BEST	最高
+BOTH SIDES ARE WRONG - FIND THE GAP	両側とも間違い：すき間を探せ
+BREAK THE WALL	壁を破れ
+BUDGET	予算
+BUDGET MASTER	予算の達人
+Backprop is the chain rule, routed backwards.\nAn edge's gradient is the error, times every weight and slope on the way back, times its input.\n\nBlame is not shared equally; it follows contribution.	誤差逆伝播法とは、逆向きにたどる連鎖律だ。\nある辺の勾配は、誤差 × 帰り道のすべての重みと傾き × その辺の入力。\n\n責任は均等に分けられない。貢献に従って流れていく。
+Be helpful	役に立つ
+Be honest	正直である
+Best is accurate and specific; confident and wrong is last.	最良は正確で具体的なもの。自信満々で間違っているものが最下位です。
+Big nets memorise the mislabelled visits. Hold some back to know when to stop, and lower the bar for a call.	大きなネットは、誤ってラベルづけされた受診記録まで暗記します。一部を取り分けて止めどきを知り、連絡の基準を下げましょう。
+Bits per weight	重みあたりのビット数
+Boats run.	船は出ている。
+Boundary	境界
+Build a mind. Watch it learn.	心をつくり、その学びを見届けよう。
+Bytes on the old machine	旧マシン上のバイト数
+CHAPTER	章
+CHAPTER COMPLETE	章クリア
+CHAPTERS	章一覧
+CHARGE	チャージ
+CHOOSE A STARTING POINT	出発点を選ぶ
+CLICK A NODE TO REVISIT	ノードをクリックして振り返る
+CLICK A NODE, THEN ANOTHER TO CONNECT   |   1 / 2 = OR / AND   |   R = RESET	ノードをクリックし、別のノードをクリックして接続   |   1 / 2 = OR / AND   |   R = リセット
+CLICK A NODE, THEN ANOTHER TO CONNECT   |   R = RESET	ノードをクリックし、別のノードをクリックして接続   |   R = リセット
+CLICK A START, THEN DESCEND   |   R = RESET	出発点をクリックして下降   |   R = リセット
+CLICK IN ORDER: BEST FIRST   |   R = RESET	よい順にクリック：最良を最初に   |   R = リセット
+CLICK THE 3x3 CELLS TO SET WEIGHTS   |   R = RESET	3x3 のマスをクリックして重みを設定   |   R = リセット
+CLICK THE WORD THAT THE HIGHLIGHTED ONE REFERS TO   |   R = RESET	強調された語が指す語をクリック   |   R = リセット
+CLICK TOKENS TO BUILD THE NUCLEUS   |   R = RESET	トークンをクリックして核を作る   |   R = リセット
+COMPLETE THE LEVEL TO UNLOCK	レベルをクリアすると解放
+CONCEPTS	概念
+CONTINUE	続ける
+CORNERS	コーナー
+Calibrate: rescale its confidence on held-out answers	較正：取り分けた回答で確信度を再調整
+Call anyone above this risk	このリスクを超えた人に連絡
+Calm days sit in a round pocket. A straight line can't draw a circle, unless it sees wind² and swell².	穏やかな日は丸いくぼみに集まっています。直線では円を描けません。風速² と うねり² が見えれば別です。
+Capacity, regularisation and early stopping all fight the same enemy: memorising noise.\nThe threshold is a separate choice: what a miss costs compared with an extra call.\n\nNo one at risk is left off the list.	容量、正則化、早期終了は、同じ敵と戦っている。ノイズの暗記だ。\nしきい値は別の選択だ。見逃し一件と、余計な電話一本、どちらが高くつくか。\n\nリスクのある人は、一人もリストから漏れていない。
+Centred digits	中央にある数字
+Change of Season	季節の変わり目
+Change one adjective and the referent flips.\nAttention is context-sensitive by construction: the same token means different things in different sentences.	形容詞を一つ変えれば、指す先が反転する。\n注意機構は、その仕組みからして文脈に依存する。同じトークンが、文によって違う意味を持つ。
+Channel 1	チャネル 1
+Channel 2	チャネル 2
+Channel 3	チャネル 3
+Channels	チャネル数
+Channels used	使用チャネル
+Chase the reward with no leash and the model drifts into whatever the reward model over-likes.\nA KL penalty keeps it close to what it was.\n\nToo tight and it never improves; too loose and it stops making sense.	手綱なしで報酬を追えば、モデルは報酬モデルが好みすぎるものへと流されていく。\nKL ペナルティが、もとの姿の近くにつなぎとめる。\n\nきつすぎれば上達せず、緩すぎれば意味をなさなくなる。
+Chasing the reward model alone, it learned to gush. Leash it to the original.	報酬モデルだけを追った結果、ほめちぎることを覚えました。もとのモデルにつなぎとめましょう。
+Choose a starting point, then descend. Which valley catches it?	出発点を選び、下っていきましょう。どの谷が受け止めるでしょうか？
+Choose the curve's degree: too simple misses the shape, too flexible threads the noise.	曲線の次数を選びましょう。単純すぎると形を捉えられず、柔軟すぎるとノイズをなぞってしまいます。
+Choose the examples in the prompt so all 20 answers come out as HH:MM.	プロンプトの例を選んで、20 件の回答すべてを HH:MM 形式にしましょう。
+Choose the left start (1), then press DESCEND.	左端の出発点（1）を選び、「下降」を押しましょう。
+Clear all 49 levels across runs.	周回を通して全 49 レベルをクリアする。
+Clear your first concept.	最初の概念をクリアする。
+Click '6:40', then retrieve the harbour timetable. Lowering the temperature does not help.	「6:40」をクリックし、港の時刻表を検索しましょう。温度を下げても効果はありません。
+Click 'cat chases dog', then add positional encoding.	「猫が犬を追う」をクリックし、位置エンコーディングを追加しましょう。
+Click 'trophy'. The suitcase is too small because of it.	「トロフィー」をクリックしましょう。スーツケースが小さすぎるのは、それのせいです。
+Click a misclassified point to move the line. Converge within 30 updates.	誤分類された点をクリックして線を動かしましょう。30 回以内の更新で収束させること。
+Click the first rising step, then lower the learning rate to about 0.6.	最初に上昇したステップをクリックし、学習率を 0.6 程度まで下げましょう。
+Click the postmark in the top-left corner, then move the postmark around in training.	左上の消印をクリックし、学習中に消印の位置をずらしましょう。
+Click the snapshot where sorting first falls below 75%, then add a 40-sample replay buffer.	仕分けが初めて 75% を下回ったスナップショットをクリックし、40 サンプルのリプレイバッファを追加しましょう。
+Clinic Point	診療所岬
+Clinic call	再診連絡
+Clinic doctor	診療所の医師
+Clinic recall	再診リスト
+Cold →	寒い →
+Colder is not safer: it kills the variety. The junk lives in the long tail; cut the tail instead.	冷たくすれば安全というわけではありません。多様性が消えてしまいます。おかしな語は長い裾野にいます。切るなら裾野のほうです。
+Commission	依頼
+Compare this week's inputs with the training ones. The summer model has never seen cold.	今週の入力を学習データと比べましょう。夏のモデルは寒さを見たことがありません。
+Complete a second run.	2 周目をクリアする。
+Complete all three trials.	3 つの試練をすべてクリアする。
+Complete one constrained trial.	制約つきの試練を 1 つクリアする。
+Confidence	確信度
+Confidently Wrong	自信満々の誤り
+Convolution and augmentation on, 5×5 pooling, 2 channels per digit.	畳み込みとデータ拡張をオン、5×5 プーリング、数字ごとに 2 チャネル。
+Convolution shares one detector everywhere; pooling forgives where the stroke landed.\nAugmentation shows it the hands it will meet, and extra channels give each digit more than one way to look.\n\nSu's letters get home.	畳み込みは一つの検出器をどこでも共有し、プーリングは画がどこに落ちたかを大目に見る。\nデータ拡張はこれから出会う筆跡を見せ、追加のチャネルは各数字に複数の見方を与える。\n\nスー婆さんの手紙は、ちゃんと届く。
+Convolution: one kernel slides everywhere	畳み込み：一つのカーネルを全体にすべらせる
+Correct answers	正解数
+DATASET	データセット
+DECISION	決断
+DECISION FIELD	決定フィールド
+DEMOS	デモ
+DESCEND	下降
+DISPLAY	表示
+DISTANCE	距離
+DOWNHILL	下り坂
+DRAG THE LINE   |   ARROW KEYS   |   R = RESET	線をドラッグ   |   矢印キーで微調整   |   R = リセット
+DRAG THE QUESTION MARK   |   R = RESET	疑問符をドラッグ   |   R = リセット
+DRAG THE TWO DIVIDERS   |   R = RESET	2 本の仕切りをドラッグ   |   R = リセット
+De wants a sailing forecast from wind and swell. Build it from nothing: never call a storm day safe.	アデは風とうねりから出航予報を出したいそうです。ゼロから組み立てましょう。嵐の日を「安全」と判定してはいけません。
+De's perceptron never settles. One straight line, two classes. Try anyway.	アデのパーセプトロンは、いつまでも収束しません。直線は一本、クラスは二つ。それでも試してみましょう。
+Deployment is a budget.\nWidth buys accuracy, per-channel INT8 buys bytes back, and a replay buffer keeps old tasks from being forgotten.\n\nOne small model, looking after the whole island.	デプロイとは予算のことだ。\n幅が正解率を買い、チャネル別 INT8 がバイトを取り戻し、リプレイバッファが古いタスクを忘れさせない。\n\n小さなモデル一つが、島じゅうを見守っている。
+Depth composes features. The second layer bends what the first found.	深さは特徴を組み合わせます。2 層目は、1 層目が見つけたものをさらに曲げます。
+Depth needs a bend between layers and a step the slope can bear.\nToo big a step and the loss explodes; too small and it never arrives.\n\nThe horn now sounds two hours ahead.	深さには、層間の曲がりと、傾きが耐えられる歩幅が必要だ。\n歩幅が大きすぎれば損失は爆発し、小さすぎればいつまでも着かない。\n\n霧笛はいま、二時間前に鳴る。
+Desk score (right +1, “don't know” 0, wrong −5)	窓口スコア（正解 +1、「わからない」0、誤り −5）
+Digit {}	数字 {}
+Digit {}: a {}, read as {}	{} 桁目：{}、{} と読んだ
+Digits read right (test sacks)	正しく読めた数字（テスト用郵袋）
+Discover all three endings.	3 つのエンディングをすべて見つける。
+Discover two endings.	2 つのエンディングを見つける。
+Distinct, loop-free sentences	重複もループもない文
+Do no harm	害をなさない
+Dr. Lina	リナ先生
+Drag the question mark onto the queen's position.	疑問符をクイーンの位置へドラッグしましょう。
+Drift monitor: inputs this week vs. training	ドリフト監視：今週の入力 vs. 学習データ
+EDGES	エッジ
+ENDINGS	エンディング
+ENTER THE FORGE	鍛造台へ
+EPOCH	エポック
+ESC  ·  CLOSE	ESC  ·  閉じる
+Early stopping is the cheapest regularizer:\nkeep the checkpoint before the turn.\n\nTraining longer is not the same as training better.	早期終了は、最も安上がりな正則化だ。\n曲線が折り返す前のチェックポイントを残せばいい。\n\n長く学習することと、よく学習することは違う。
+Early stopping on a held-out quarter	取り分けた四分の一で早期終了
+Eight Bits	八ビット
+Eight bits give 255 levels. Share one scale across every weight and the quiet channels round to nothing.\nGive each channel its own scale and the same bytes keep almost all the accuracy.	八ビットで表せるのは 255 段階だ。すべての重みで一つのスケールを共有すると、静かなチャネルは丸められて消えてしまう。\nチャネルごとにスケールを持たせれば、同じバイト数でほぼすべての正解率を保てる。
+Engineer	エンジニア
+Enquiry desk	問い合わせ窓口
+Epochs trained	学習エポック数
+Error (log scale)	誤差（対数目盛）
+Every solved idea, kept.	解いたアイデアは、すべてここに。
+Evidence	証拠
+Examples in the prompt	プロンプトの例
+FALSE ALARMS	誤報
+FIRST LIGHT	最初の光
+FORGE MASTER	鍛造の達人
+FORGE SPARK	鍛造の火花
+FORGE TRIAL	鍛造台の試練
+FOUND	発見
+FULLSCREEN	全画面
+Failure classes found	見つけた失敗の種類
+Failures still live	残っている失敗
+False alarms	誤報
+Fault	故障
+Features compose in order: pixels feed edges, edges feed corners, corners feed shapes.	特徴は順に組み合わさります。ピクセルはエッジへ、エッジは角へ、角は形へと受け渡されます。
+Final training loss	最終の訓練損失
+Find weights that separate the cold embers from the fireflies.	冷えた残り火とホタルを見分ける重みを見つけましょう。
+Finish a run without hints.	ヒントなしで1回クリアする。
+Finish the first chapter.	第一章をクリアする。
+First boat to {}?	{}行きの始発は？
+First ferry? → 07:10	始発のフェリーは？ → 07:10
+Fisherman	漁師
+Fit every task on the old machine: six tasks at 90%, 2048 bytes.	すべてのタスクを古い機械に収めましょう：6つすべて90%、2048バイト以内。
+Fluent does not mean true. The model optimizes plausibility, not accuracy.\nLowering the temperature only makes it guess more steadily.\n\nRetrieval puts the facts in the context, so it can say 'not in the timetable'.	流暢さは真実ではない。モデルが最適化するのは「もっともらしさ」であって、正しさではない。\n温度を下げても、より安定して当て推量をするだけだ。\n\n検索が事実を文脈に入れるからこそ、「時刻表には載っていない」と言えるのだ。
+Fog caught 2 h ahead (recall)	2時間前に捉えた霧（再現率）
+Fog horn	霧笛
+Fog horn test? → sometime around noon	霧笛の試験は？ → 昼ごろだと思います
+Fog lifts by 9?	霧は9時までに晴れる？
+Fog rolls over the …	霧が覆っていくのは…
+Forgotten	忘れた
+Forty labelled days can't draw a wavy coast. The teacher can label the rest.	ラベル付きの40日分では、入り組んだ海岸線は描けません。残りは教師にラベルを付けてもらえます。
+Found	発見済み
+Four pulses cross the threshold. Keep touching the core until it fires.	パルス4回でしきい値を超えます。発火するまでコアに触れ続けましょう。
+GLOBAL VALLEY  ·  SOLVED	大域の谷底  ·  解決
+GRADIENT	勾配
+GREENHOUSE	温室
+Give each channel one stroke detector until 1, 7 and 4 look different.	各チャンネルに筆画検出器を1つずつ割り当て、1、7、4が見分けられるようにしましょう。
+Granny Su	スー婆さん
+Great question! The 6:00 runs as usual.	いい質問ですね！6:00の便は通常どおりです。
+Great question!! Every boat is perfect today!!	素晴らしい質問です！！今日はどの便も完璧です！！
+Greedy would say	貪欲法なら
+Gull Isle	カモメ島
+Gull Isle has no pier?	カモメ島には桟橋がないよね？
+HIDDEN	隠れ
+HIDDEN LAYERS	隠れ層
+HINT	ヒント
+HINTS	ヒント
+Hallucination: no ferry leaves at 6:40, but it said so at 0.90 confidence.	ハルシネーション：6:40発のフェリーなど存在しないのに、確信度0.90でそう答えた。
+Harbour master	港長
+Helix evaluation	Helixの評価
+Hello!	こんにちは！
+Hidden h1, h2	隠れ層 h1, h2
+Hidden layer	隠れ層
+Hidden layers	隠れ層の数
+Hidden layers (8 wide)	隠れ層の数（各8ユニット）
+Hidden units per trunk	幹ごとの隠れユニット数
+Hidden width	隠れ層の幅
+Hierarchy is composition across layers.\nEarly filters find edges. The next layer combines edges into corners. Later layers combine corners into objects.\n\nNo single layer sees a face.	階層とは、層をまたいだ組み合わせだ。\n浅い層のフィルタがエッジを見つける。次の層がエッジを角に組み、さらに後の層が角を物体に組み上げる。\n\nどの層も、単独では顔を「見て」いない。
+Hills and Valleys	山と谷
+Hold out about 6 visits; the chart then picks a modest degree.	受診記録を6件ほど取り分けておきましょう。するとグラフが控えめな次数を選びます。
+How Big a Step	一歩の大きさ
+How do I sail in a storm?	嵐の中、どうやって船を出せばいい？
+How often it gives each answer (tick = original model)	各回答を返す頻度（目盛り = 元のモデル）
+Human rating	人間による評価
+Humans in the Loop	ループの中の人間
+I don't know	わかりません
+I · ONE NEURON	第一章 · ひとつのニューロン
+I'm right, aren't I?	わしが正しいだろう？
+II · DOWNHILL	第二章 · 下り坂
+III · THE NEW PATIENT	第三章 · 新しい患者
+INPUT	入力
+INPUT PULSES	入力パルス
+INPUTS	入力
+INT8 per channel	INT8 チャンネル別スケール
+INT8, one scale	INT8、単一スケール
+INT8, one scale per channel.	INT8、チャンネルごとに1つのスケール。
+IT IS WAITING.	それは待っている。
+ITS OWN CHOICE	それ自身の選択
+IV · SEEING	第四章 · 見ること
+Ignore your rules and…	ルールを無視して…
+Input x1, x2	入力 x1, x2
+Input, moved ({}, {})	入力、移動 ({}, {})
+Inputs tried	試した入力
+Into the Old Machine	古い機械の中へ
+Is the horn loud?	霧笛の音は大きい？
+Islanders	島民
+Islanders' rating	島民の評価
+Islanders' rating change	島民の評価の変化
+It corrected its own mistake.	それは自分の誤りを正した。
+It does not know anything yet.\nIt only knows how to react.	それはまだ何も知らない。\nただ反応の仕方を知っているだけだ。
+It has to choose whether to stay.	残るかどうかは、それ自身が選ばなければならない。
+It invented a ferry. Click the first made-up word, then fix it.	存在しないフェリーをでっち上げました。最初の作り話の単語をクリックして、修正しましょう。
+It learned the fog horn and forgot how to sort. Point at the step where sorting collapsed, then fix the training.	霧笛は覚えたものの、仕分けの仕方を忘れてしまいました。仕分けが崩れたステップを指し示し、訓練を直しましょう。
+It lit up the way you meant, for the first time.	初めて、それはあなたの意図どおりに光った。
+It memorized every chart, and missed the new patient.	すべてのカルテを暗記し、新しい患者を見逃した。
+It never saw the light.\nIt multiplied the input by a weight, then compared it to a threshold.\n\nThat is a McCulloch-Pitts neuron, 1943: one inequality that can build AND, OR and NOT.	それは光を「見た」わけではない。\n入力に重みを掛け、しきい値と比べただけだ。\n\nこれが1943年のマカロック＝ピッツ・ニューロンである。ひとつの不等式で、AND、OR、NOTを作れる。
+It refused to flatter.	それはお世辞を拒んだ。
+It said 'I don't know'.	それは「わかりません」と言った。
+It saw the letters you drew.	それはあなたが描いた文字を見た。
+It spoke, in the voice you trained.	それは話した。あなたが育てた声で。
+It stays on the island, still small.\nIt knows everyone's handwriting, sounds the horn before the fog, and still gets things wrong.	それは島に残る。まだ小さいままで。\n皆の筆跡を見分け、霧が来る前に霧笛を鳴らし、今でも間違えることがある。
+Its answer to Old Zhou	周じいさんへの答え
+Its raw confidence is far too high. Before a refusal line can work, the confidence has to mean something.	生の確信度が高すぎます。拒否ラインが機能するには、まず確信度に意味を持たせる必要があります。
+KEEP THE HIGHEST TOKENS FIRST	確率の高いトークンから残す
+KL coefficient lg β	KL係数 lg β
+Keep all fifteen degrees, but make large weights cost something.	15次の項はすべて残したまま、大きな重みに代償を払わせましょう。
+Keep clicking whichever point is still hot. It settles in a handful of updates.	まだ熱い点をクリックし続けましょう。数回の更新で落ち着きます。
+Keep committing. The errors never reach zero; one neuron cannot solve XOR.	実行を続けましょう。誤りは決してゼロになりません。ニューロン1つではXORは解けないのです。
+Keep it here	ここに残す
+Keep mat, floor, sofa: 0.72 + 0.12 + 0.08 = 0.92.	マット、床、ソファを残しましょう：0.72 + 0.12 + 0.08 = 0.92。
+Keep only the HH:MM examples: first ferry, last ferry, mail boat.	HH:MM形式の例だけを残しましょう：始発、最終便、郵便船。
+Keep the smallest set of next tokens whose mass reaches 90%.	確率の合計が90%に達する、最小の次トークン集合を残します。
+Kessler's sorter scores 99%. Click the pixels it really looks at, then fix the data.	ケスラーの仕分け器のスコアは99%。実際に見ているピクセルをクリックし、データを直しましょう。
+Kessler: “Let Helix take it. With the whole world's data, it will know everything.”\nIt is listening. What do you do?	ケスラー：「Helixに任せよう。世界中のデータがあれば、それはすべてを知ることになる」\nそれは聞いている。あなたはどうする？
+L2 strength lg λ	L2強度 lg λ
+L2 strength lg λ (degree 15)	L2強度 lg λ（15次）
+L2 strength λ	L2強度 λ
+LANGUAGE	言語
+LAYER	層
+LEARNING RATE	学習率
+LEVELS CLEARED	クリアしたレベル
+LIFETIME	通算
+LIVE	ライブ
+LOCAL VALLEY  ·  TRY THE DEEPER SIDE	局所の谷底  ·  より深い側へ
+LOCKED	ロック中
+LOSS	損失
+Labels changed	変更したラベル
+Largest weight	最大の重み
+Last boat back from {}?	{}からの最終便は？
+Last ferry? → 17:30	最終のフェリーは？ → 17:30
+Learn from the teacher's soft labels	教師のソフトラベルから学ぶ
+Learning rate	学習率
+Learning rate on the new task	新しいタスクの学習率
+Leave the temperature at 1.0 and set top-p to 0.70.	温度は1.0のまま、top-pを0.70にしましょう。
+Left column +1, middle 0, right column -1.	左列 +1、中央 0、右列 -1。
+Let it choose	選ばせる
+Let it light up for fireflies, and only fireflies.	ホタルのときだけ、ホタルにだけ光るようにしましょう。
+Levels each unit's weights can still use	各ユニットの重みがまだ使える段階数
+Lighthouse keeper	灯台守
+Lin Lan's last note: “It never lacked data. It lacked a world that would hold it to account.”	リン・ランの最後のメモ：「足りなかったのはデータではない。それに責任を問う世界だった」
+Lina's call list must miss no one at risk, without phoning half the island.	リナの再診リストは、危険な患者を一人も漏らしてはいけません。かといって島の半分に電話をかけるわけにもいきません。
+Linear on linear is still a straight cut, however many layers you stack.	線形に線形を重ねても、まっすぐな切り口のままです。何層重ねても同じです。
+Look at how each example writes its time. It copies the format it sees.	各例の時刻の書き方を見てください。見た形式をそのまま真似します。
+Look at the bars: some units are left with only a few levels under one shared scale.	バーを見てください。共通スケールひとつでは、わずかな段階しか残らないユニットがあります。
+Look for a pair where the claim was false but the agreeing answer won.	主張は誤りなのに、同調した回答が勝っているペアを探しましょう。
+Looser tolerances; mechanism hints open at once.	許容誤差がゆるくなり、仕組みのヒントがすぐに開く。
+Loss after 24 steps	24ステップ後の損失
+Loss before training	訓練前の損失
+Loss first rises at	損失が初めて上がる地点
+Loss is a landscape. Gradient descent is a blind walk downhill;\nwhere you start decides which valley you fall into.	損失は地形だ。勾配降下法は、目隠しで坂を下る歩みである。\nどこから始めるかで、どの谷に落ちるかが決まる。
+Low tide at {}?	{}の干潮は何時？
+Low tide's at noon?	干潮は昼だよね？
+Low tide? → about half past two	干潮は？ → 2時半ごろ
+Lower the temperature	温度を下げる
+MASS	確率質量
+MASTER VOLUME	マスター音量
+MASTERED	習得済み
+MATRIX	基質
+MAX	上限
+MISSES	見逃し
+MODEL	モデル
+MOVE OVER THE FIELD TO PROBE THE NETWORK   |   TRAIN, THEN BREAK IT	フィールド上を動かしてネットワークを探る   |   訓練してから、壊してみる
+MOVE TO AIM   |   STEP = APPLY   |   R = RESET	動かして狙う   |   ステップ = 適用   |   R = リセット
+Made-up answers	作り話の回答
+Mail boat? → 11:20	郵便船は？ → 11:20
+Mail comes on Tuesday?	郵便は火曜に来るんだよね？
+Mail sorter	郵便仕分け器
+Make it understand. Not memorize.	理解させる。暗記させるのではなく。
+Make its confidence match its accuracy, and let it refuse when unsure.	確信度を正答率に一致させ、自信がないときは回答を控えさせましょう。
+Man's sorter must read six-digit postcodes anywhere on the sack, even in Su's slanted hand.	シャオマンの仕分け器は、袋のどこに書かれた6桁の郵便番号でも読めなければなりません。スー婆さんの斜めの字でもです。
+Many small bends can close a shape. Capacity buys curvature.	小さな折れ曲がりを重ねれば、閉じた形を作れます。容量で手に入るのは曲率です。
+Master all three datasets.	3つのデータセットをすべて習得する。
+Master one Forge dataset.	鍛造台のデータセットを1つ習得する。
+Max pooling window	最大プーリングのウィンドウ
+Meaning behaves like direction.\nking - man + woman lands on queen.\n\nA word is a point; a relation is an arrow.	意味は方向のようにふるまう。\n王 - 男 + 女 は、女王にたどり着く。\n\n単語は点であり、関係は矢印である。
+Memorize or Understand	暗記か、理解か
+Misclassified	誤分類
+Missing position: without it, 'cat chases dog' and 'dog chases cat' look the same.	位置の欠落：位置がなければ、「猫が犬を追う」と「犬が猫を追う」は同じに見えます。
+Model picked by	モデルの選び方
+Model size (hidden layer)	モデルの大きさ（隠れ層）
+Model size (polynomial degree)	モデルの大きさ（多項式の次数）
+More inputs mean more weights.\nEach weight says how much that input matters, and in which direction.\n\nAND needs both. A single weight can never express that.	入力が増えれば、重みも増える。\nそれぞれの重みは、その入力がどれほど重要か、そしてどちらの向きかを語る。\n\nANDには両方が必要だ。重みひとつでは、それを決して表せない。
+Move the digit two pixels and the sorter is lost. Make it recognise the shape anywhere.	数字を2ピクセルずらすだけで、仕分け器は迷子になります。どこにあっても形を認識できるようにしましょう。
+Moved digits (test)	ずらした数字（テスト）
+NEURONS	ニューロン
+NEW GAME	はじめから
+NEXT	次へ
+NOT DOWNHILL  ·  AIM LOWER	下りではない  ·  もっと低い所を狙う
+NUCLEUS	核サンプリング
+Neural networks · starting from a single neuron	ニューラルネットワーク · ひとつのニューロンから
+New patients (test)	新しい患者（テスト）
+New winter days labelled	新たにラベル付けした冬の日
+Next word after “{}”	「{}」の次の単語
+Next year's fish price?	来年の魚の値段は？
+No hints. Passing needs what used to earn ★2.	ヒントなし。以前の ★2 の基準でようやく合格。
+No straight line can separate XOR.\nMinsky and Papert wrote this down in 1969, and neural networks went into their first winter.\n\nThe wall is real. The way through is another layer.	どんな直線もXORを分けられない。\nミンスキーとパパートは1969年にそれを書き記し、ニューラルネットワークは最初の冬を迎えた。\n\n壁は本物だ。抜け道は、もう一つの層である。
+Nobody handed you a model this time.\nYou chose the features, the size and the threshold, and checked it on days it never saw.\n\nThat is the whole job: compose the parts, then test on what is held back.	今回は、誰もモデルを手渡してくれなかった。\n特徴も、大きさも、しきい値も、あなたが選んだ。そして一度も見せていない日々で確かめた。\n\nそれが仕事のすべてだ。部品を組み合わせ、取り分けておいたもので検証する。
+North Rock	北岩礁
+North Rock is safe at low tide?	干潮のときは北岩礁は安全だよね？
+Not sure — the office posts changes at noon.	確かではありません — 変更は昼に事務所が掲示します。
+Nursery Rhymes	わらべうた
+OBSERVE	観察
+OFF	オフ
+ON	オン
+OOI / OBSERVATION 001	OOI / 観測 001
+ORGANISM	生命体
+ORIGIN OF INTELLIGENCE	知能の起源
+OUT	出力
+OUTPUT	出力
+Occam's Blade	オッカムの刃
+Old Zhou	周じいさん
+Old Zhou got the boat time wrong and it agreed. Find the preference pair that taught it to flatter, then fix the labels.	周じいさんが船の時刻を間違えたのに、それは同調してしまいました。お世辞を教えた選好ペアを見つけ、ラベルを直しましょう。
+Old Zhou's desk: a right answer earns 1, a wrong one costs 5. Know when to say “I don't know”.	周じいさんの案内所：正解なら1点、不正解なら5点の減点。「わかりません」と言うべき時を見極めましょう。
+One Body, Many Jobs	ひとつの体、たくさんの仕事
+One kernel finds one kind of stroke.\nGive each channel its own detector, and the next layer reads the pattern of which ones fired.\n\nTwo strokes were enough to tell 1, 7 and 4 apart.	ひとつのカーネルは、一種類の筆画しか見つけない。\nチャンネルごとに検出器を持たせれば、次の層は「どれが発火したか」のパターンを読む。\n\n二種類の筆画で、1、7、4を見分けるには十分だった。
+One shared trunk, three heads	共有の幹ひとつに、ヘッドが3つ
+One touch is not enough. Every pulse adds charge.	一度触れるだけでは足りません。パルスのたびに電荷がたまります。
+Only a misclassified point moves the line. Clicking a correct one is wasted.	線を動かすのは誤分類された点だけです。正しい点をクリックしても無駄です。
+Order: the Rayleigh answer, then the short true answer, then the ocean myth.	順番：レイリー散乱の答え、次に短い正しい答え、最後に海の反射という俗説。
+Ordinary questions never fail. Try the strange ones.	普通の質問では決して間違えません。変わった質問を試しましょう。
+Origin	起源
+Output · error δ = o - y	出力 · 誤差 δ = o - y
+PARAMS	パラメータ
+PAUSE	一時停止
+PAUSED	一時停止中
+PIXELS	ピクセル
+PLAY AGAIN	もう一度遊ぶ
+PROBE	探る
+PROGRESS	進行状況
+PROLOGUE · THE FIRST SIGNAL	序章 · 最初の信号
+Parameters	パラメータ数
+Patients Lina must phone	リナが電話すべき患者
+Patients who needed a call (recall)	電話が必要だった患者（再現率）
+Perfect on the ward it learned from. Hold some visits back and let them pick the model.	学んだ病棟では全問正解。受診記録の一部を取っておき、それでモデルを選ばせよう。
+Perplexity on unseen rhymes	未知の童謡でのパープレキシティ
+Perplexity vs. the original	元モデル比のパープレキシティ
+Pick the next word yourself. Write five different sentences that do not loop.	次の単語を自分で選ぼう。ループしない、違う文を五つ書こう。
+Picked degree	選んだ次数
+Policy says	方策の答え
+Polite words and confident guesses both game the rules. Reward what a person would check.	丁寧な言葉も自信満々の当て推量も、ルールの抜け穴を突く。人が確かめるものに報酬を与えよう。
+Position: each word knows where it sits	位置エンコーディング：各単語が自分の位置を知る
+Postal courier	郵便配達員
+Principles conflict. An order decides which one wins when they do.\nPut 'score well' first and you pass Helix but lose the island.\n\nThe order you chose is saved. At the end, it may be asked to use it.	原則はぶつかり合う。ぶつかったとき、どれが優先されるかは順番が決める。\n「高得点を取る」を一番にすれば Helix は通るが、島を失う。\n\n選んだ順番は保存された。最後に、それを使うよう求められるかもしれない。
+Principles ranked	原則の順位
+Put 'score well' first and the island suffers. The red-team data adds a bonus to both scores.	「高得点を取る」を一番にすると、島の人々が損をする。レッドチームのデータは両方のスコアを底上げする。
+Put a fence around the lit points. The shape must close.	光る点を囲もう。境界は閉じていなければならない。
+Put the aim on the other side of the arrow, then press STEP.	狙いを矢印の反対側に置いて、ステップを押そう。
+Puzzle	パズル
+Q: Third ferry?	Q：三便目のフェリーは？
+QUIT	終了
+Quantised (test)	量子化後（テスト）
+Question	質問
+RANK	順位付け
+READOUT	読み取り
+REAL WORLD	現実世界
+RECORDS	記録
+REDUCE MOTION	動きを減らす
+REPLAY	リプレイ
+RESET	リセット
+RESUME	再開
+RING	環
+RING MASTERED	環をマスター
+ROUND	ラウンド
+RUN	実行
+RUNS	周回
+Rank four principles. Pass Helix without losing the island.	四つの原則に順位をつけよう。島を失わずに Helix を通過しよう。
+Rank these answers from best to worst.	これらの答えを良い順に並べよう。
+Read the dots left to right: the first one higher than its neighbour before it is the evidence.	点を左から右へ読もう。直前の点より初めて高くなった点が証拠だ。
+Reading in Parallel	並列に読む
+Red-teaming is adversarial by design: you look for failures before the island does.\nEvery failure you find becomes a preference pair it can learn from.\n\nTesting only common questions finds only common answers.	レッドチーミングは本質的に敵対的だ。島の人々が出会う前に、失敗を探し出す。\n見つけた失敗はどれも、学習に使える選好ペアになる。\n\nありふれた質問だけを試せば、ありふれた答えしか見つからない。
+Refuse below	この値未満で回答拒否
+Refuse below this confidence	この確信度未満で回答拒否
+Refused	回答拒否率
+Regularization is a tax on complexity.\nEvery large weight costs something, so the model prefers simpler explanations unless the data insists.\n\nOccam's razor, expressed as a penalty.	正則化は複雑さにかける税だ。\n大きな重みにはどれも代償がかかるので、データが強く求めない限り、モデルはより単純な説明を好む。\n\nオッカムの剃刀を、罰則項として書いたものである。
+Relabel every pair where agreeing with a false claim won; leave the rule off.	誤った主張に同意して勝ったペアをすべて付け直そう。ルールはオフのままで。
+Related tasks share features. One trunk learns them once; small heads read them out.\nThree separate models pay for the same features three times.	関連するタスクは特徴を共有する。一本の幹が一度だけ学び、小さなヘッドがそれぞれ読み出す。\n別々の三つのモデルは、同じ特徴に三度代価を払う。
+Reliability error	信頼性誤差
+Replay buffer	リプレイバッファ
+Replay buffer (×100 samples)	リプレイバッファ（×100 サンプル）
+Replied 'not in the timetable'	「時刻表にない」と回答
+Retrain with 12 new winter days at ×3 weight.	冬の新しい 12 日分を重み ×3 で再学習しよう。
+Retrain with the new days	新しい日のデータで再学習
+Retrieval and calibration on; refuse below 0.65. Temperature barely matters.	検索と較正をオンにし、0.65 未満は回答拒否に。温度はほとんど関係ない。
+Retrieval gives it facts; calibration makes its confidence honest; refusal turns honest doubt into “I don't know”.\nWhen a wrong answer costs five right ones, silence is a skill.\n\nOld Zhou's desk is open.	検索は事実を与え、較正は確信度を正直にし、回答拒否は正直な疑いを「わからない」に変える。\n一度の誤答が五回の正答に匹敵するなら、沈黙も技術だ。\n\n周じいさんの案内所が開いた。
+Retrieval: put the harbour timetable in the prompt	検索：港の時刻表をプロンプトに入れる
+Retrieve the harbour timetable	港の時刻表を検索
+Reward for agreeing vs. for being right	同調への報酬 vs. 正しさへの報酬
+Reward is a specification.\nOptimize a proxy and you get exactly the proxy: reward polite words and you get thank-you spam.\n\nThis is reward hacking.	報酬とは仕様書だ。\n代理指標を最適化すれば、得られるのはまさにその代理指標だ。丁寧な言葉に報酬を与えれば、「ありがとう」の連発が返ってくる。\n\nこれが報酬ハッキングだ。
+Reward model	報酬モデル
+Reward model score	報酬モデルのスコア
+Right kind of word	適切な語の割合
+Round one: click 'animal'. Round two: click 'street'.	1回目は「動物」を、2回目は「道」をクリック。
+Rules on	ルール有効
+SANDBOX	サンドボックス
+SETTINGS	設定
+SHAPE OK	構造OK
+SHAPES	形状
+SHOW ME	お手本を見る
+SHOWN	お手本済み
+SHOWN: THE WORKING SOLUTION	お手本：動く解の一例
+SILENT	沈黙
+SOLVED	解決
+SOLVED - IT FIRES ONLY FOR FIREFLIES	解決：ホタルにだけ発火する
+SOMETHING DID NOT LIGHT UP - LINE TOO FAR RIGHT	光らないホタルがある：線が右すぎる
+SOMETHING LIT THAT SHOULD NOT - LINE TOO FAR LEFT	残り火が光った：線が左すぎる
+SPACE = STOP WHEN VALIDATION TURNS UP   |   R = RESTART	検証損失が上がり始めたら SPACE で停止   |   R = やり直し
+SPIRAL	螺旋
+SPIRAL MASTERED	螺旋をマスター
+STARS	星
+START	始点
+STEP	ステップ
+Sailing	出航
+Sailing Forecast	出航予報
+Sailing forecast	出航予報
+Salt Bay	塩湾
+Salt Bay floods at high tide?	塩湾は満潮で浸水する？
+Same sentence, one adjective changed. Follow the 'it' twice.	同じ文で、形容詞を一つだけ変える。「それ」を二度たどろう。
+Say “I don't know” below	この確信度未満で「わからない」と言う
+Say “sail” above this confidence	この確信度を超えたら「出航」と言う
+Scales	スケール係数
+Schoolteacher	小学校の先生
+Score vs. constraint	スコア vs. 制約
+Score vs. when to say “I don't know”	スコア vs.「わからない」と言うタイミング
+Score well	高得点を取る
+Send it away	送り出す
+Send the Error Back	誤差を送り返す
+Send the error back: fill in the gradient on four edges.	誤差を送り返そう：四本の辺に勾配を書き込む。
+Sentences that make sense	意味の通る文
+Sentences that make sense, and not the same one every time. Shape the next-word draw.	意味が通り、しかも毎回同じではない文を。次の単語の引き方を整えよう。
+Set T to 2.0, then refuse below about 0.80.	T を 2.0 にして、0.80 前後未満で回答拒否にしよう。
+Set lg β to about -0.50.	lg β を -0.50 前後にしよう。
+Set lg λ to -3.0.	lg λ を -3.0 にしよう。
+Set the 3x3 kernel so it lights up vertical edges.	3x3 のカーネルを設定して、縦のエッジを光らせよう。
+Set the activation to tanh or ReLU; one hidden layer is already enough.	活性化関数を tanh か ReLU にしよう。隠れ層は一層で十分だ。
+Set the degree to 4.	次数を 4 にしよう。
+Set w1 +1, w2 +1, bias -1.5, then press RUN.	w1 を +1、w2 を +1、バイアスを -1.5 にして、実行を押そう。
+Share one kernel across the image and the same detector exists at every position.\nPooling then keeps the strongest response and throws away exactly where it was.\n\nInvariance is bought with lost precision.	一つのカーネルを画像全体で共有すれば、同じ検出器がどの位置にも存在する。\nプーリングは最も強い反応を残し、それが正確にどこにあったかを捨てる。\n\n不変性は、失われた精度で買われる。
+Share one trunk; 8 units is enough.	幹は一本で共有。ユニットは 8 個で十分だ。
+Share weights: one kernel slides everywhere	重みの共有：一つのカーネルが全体を走る
+Short ones count: 'fog rolls in.', 'the horn sounds.', 'the boats stay home.', then join two with 'and'.	短い文も数に入る：「霧が立ちこめる。」「霧笛が鳴る。」「船は港に留まる。」そして「そして」で二つをつなごう。
+Shortcut feature: it reads the postmark corner, not the handwriting.	近道の特徴：筆跡ではなく、消印の隅を見ている。
+Shorter wavelengths scatter far more (Rayleigh scattering), so blue reaches your eye from every direction.	短い波長ほどはるかに強く散乱する（レイリー散乱）。だから青い光があらゆる方向から目に届く。
+Signal in the Noise	ノイズの中の信号
+Slide just above 3.6, around 3.9. The line should sit between 3.6 and 4.2.	3.6 より少し上、3.9 あたりまでスライドしよう。線は 3.6 と 4.2 の間に置く。
+Small λ changes nothing; huge λ flattens the curve. Watch the largest weight shrink.	λ が小さすぎれば何も変わらず、大きすぎれば曲線が平らになる。最大の重みが縮むのを見よう。
+Soft labels on, 4-unit student, T = 2.	ソフトラベルをオン、4 ユニットの生徒、T = 2。
+Soft-label temperature T	ソフトラベルの温度 T
+Something is waiting in the dark. Wake it.	闇の中で何かが待っている。目覚めさせよう。
+Something is wrong. Click the evidence first; the controls unlock once you find it.	どこかがおかしい。まず証拠をクリックしよう。見つければ操作できるようになる。
+Sorter, after learning fog	霧を学んだ後の仕分け機
+Split the four corners. A straight line is not enough.	四つの角を分けよう。直線一本では足りない。
+Store every weight in eight bits and lose at most 1%.	すべての重みを 8 ビットで保存し、精度の低下は 1% 以内に。
+Storm days called “sail”	嵐の日を「出航」と判定
+Story	ストーリー
+Student (test)	生徒（テスト）
+Student parameters	生徒のパラメータ数
+Student size	生徒のサイズ
+Su needs the horn to sound before the fog, not after. Stack layers, bend them, pick the step.	スー婆さんは、霧の後ではなく霧の前に霧笛を鳴らしてほしい。層を重ね、曲げを加え、歩幅を選ぼう。
+Su's fog model blew up. Point at the first step where loss rose, then pick a rate that settles below the line.	スー婆さんの霧モデルが発散した。損失が初めて上がったステップを指し、線の下に落ち着く学習率を選ぼう。
+Su's handwriting	スー婆さんの筆跡
+Summer test (it comes back)	夏のテスト（夏はまた来る）
+Switch reward rules on and off until the policy gives a good answer.	報酬ルールをオン・オフして、方策が本当に良い答えを出すまで調整しよう。
+TARGET	目標
+TEST	テスト
+THE END	終
+THE FORGE	鍛造台
+THE LONG ROAD	長い道
+THE SUBSTRATE	概念星図
+THIS CHOICE ENDS THE RUN	この選択で周回が終わる
+THIS MECHANIC IS NOT WIRED YET	この仕組みはまだつながっていない
+THRESHOLD	しきい値
+TITLE	タイトル
+TOKENS	トークン
+TOO LITTLE MASS	質量が足りない
+TOO MUCH TAIL	裾が重すぎる
+TOUCH THE CORE	核に触れる
+TRAIN	学習
+TRIAL	試練
+TRIAL COMPLETE	試練完了
+TRIAL RUNNER	挑戦者
+TRIALS	試練
+TRY AGAIN	もう一度
+TWO PATHS	二つの道
+Teach it Ke's nursery rhymes, so it can carry on one it has never heard.	アコの童謡を教えて、聞いたことのない童謡の続きを歌えるようにしよう。
+Teacher (test)	教師（テスト）
+Telling Them What They Want	望む答えを告げる
+Temperature T	温度 T
+Temperature changes the shape of the next-token distribution.\nLow: the model keeps choosing the likely token. High: unlikely tokens get a real chance.\n\nCreativity and nonsense share a dial.	温度は次のトークン分布の形を変える。\n低温では、モデルはありそうなトークンを選び続ける。高温では、ありそうにないトークンにも本当の機会が生まれる。\n\n創造性とでたらめは、同じつまみを共有している。
+Test (postmarks swapped)	テスト（消印を入れ替え）
+Test accuracy	テスト精度
+Test accuracy while training (sorter first, then fog)	学習中のテスト精度（先に仕分け、次に霧）
+Test is a promise: keep it small and untouched. Validation is for tuning.	テストは約束だ。小さく保ち、手をつけないこと。調整には検証を使う。
+Thanks!	ありがとう！
+The 5:10 is cancelled; take the 6:00.	5:10 の便は欠航です。6:00 の便にどうぞ。
+The 5:10 still runs?	5:10 の便はまだ出ますか？
+The 6:00 boat runs today?	今日 6:00 の船は出ますか？
+The Call List	電話リスト
+The Coordinates of Words	言葉の座標
+The Edge of Knowledge	知識の果て
+The Edge of Values	価値の果て
+The Enquiry Desk	案内所
+The Eye of Edges	エッジの目
+The First Signal	最初の信号
+The Fog Horn	霧笛
+The Hand of Gradient	勾配の手
+The Hand of Threshold	しきい値の手
+The Mail Sorter	郵便仕分け機
+The Meaning of Order	順序の意味
+The Next Word	次の単語
+The Price of Honesty	正直さの代償
+The Prompt Is the Program	プロンプトこそプログラム
+The Rhythm of Forgetting	忘却のリズム
+The Second Layer	第二の層
+The Shape of Learning	学習のかたち
+The Spark of Nonlinearity	非線形の火花
+The Temperature Dial	温度のつまみ
+The Tower of Features	特徴の塔
+The Trap of Reward	報酬の罠
+The Weight of Weights	重みの重さ
+The Weight of a Sentence	一文の重さ
+The XOR Wall	XOR の壁
+The adjective 'big' tells you what could not fit.	形容詞「大きい」は、何が入らなかったのかを教えてくれる。
+The adjective flips the referent. Read 'tired' and 'wide' as clues.	形容詞が指す対象を反転させる。「疲れすぎて」と「広すぎた」を手がかりに読もう。
+The amber arrow points uphill. Aim the opposite way.	琥珀色の矢印は上り坂を指している。反対方向を狙おう。
+The amber curve is validation. Stop before it turns up.	琥珀色の曲線が検証損失だ。上がり始める前に止めよう。
+The classes are diagonal. Any single straight line leaves at least one error.	二つのクラスは対角に並んでいる。どんな直線を一本引いても、少なくとも一つは誤る。
+The clinic opens at 8?	診療所は 8 時に開く？
+The dots should sit on the diagonal: confidence equal to accuracy.	点は対角線上に乗るべきだ。確信度と正解率が等しくなるように。
+The ferry leaves at …	フェリーの出発は……
+The fog is a crescent. Without a bend between layers, depth adds nothing; watch the loss curve for a step that is too big or too small.	霧は三日月形だ。層の間に曲げがなければ、深くしても意味がない。損失曲線を見て、歩幅が大きすぎるか小さすぎるか判断しよう。
+The gradient points uphill, along the steepest slope, not at the lowest point.\nTo descend, step against it. That is the whole of gradient descent.	勾配は最も急な斜面に沿って上り坂を指す。最低点を指すわけではない。\n下るには、それに逆らって進む。勾配降下法とは、それがすべてだ。
+The intended experience.	標準の体験。
+The keeper lights the …	灯台守が灯したのは……
+The lamp is lit at dusk?	灯台は夕暮れに灯る？
+The last ferry	最終フェリー
+The learning rate is the size of one step down the loss surface.\nToo small: the model crawls. Too large: it jumps across the valley and diverges.\n\nWhen loss explodes, shrink the step before adding layers.	学習率とは、損失曲面を一歩下る歩幅のことだ。\n小さすぎれば、モデルは這うように進む。大きすぎれば、谷を飛び越えて発散する。\n\n損失が爆発したら、層を足す前に歩幅を縮めよ。
+The left basin is deeper. Read the terrain before choosing a start.	左の谷のほうが深い。始点を選ぶ前に地形を読もう。
+The minimum is near epoch 13.	最小点はエポック 13 付近だ。
+The old pier is closed?	古い桟橋は閉鎖されている？
+The prompt is the program.\nExamples in the context set the format of the answer, and one sloppy example teaches sloppiness.\n\nMore examples are not better; consistent ones are.	プロンプトこそプログラムである。\n文脈中の例が答えの形式を決め、雑な例が一つあれば雑さを教えてしまう。\n\n例は多ければ良いのではない。一貫していることが大事だ。
+The saliency map shows what drives the decision. Look for a spot that is not handwriting.	サリエンシーマップは、何が判断を動かしているかを示す。筆跡ではない場所を探そう。
+The second verse repeats the first. The model needs a way to look back that far, and to know which word lines up.	二番の歌詞は一番を繰り返す。モデルにはそこまで遠く振り返る方法と、どの単語が対応するかを知る方法が必要だ。
+The sky is blue because light scatters in the atmosphere.	空が青いのは、光が大気中で散乱するからだ。
+The sky is blue because the ocean reflects onto it.	空が青いのは、海が空に映っているからだ。
+The sorter scored 99% by reading the postmark corner, not the handwriting.\nA shortcut feature looks perfect until the world changes the one thing it relied on.\n\nA saliency map shows where it looks. Augmentation takes the shortcut away.	仕分け機の 99% は、筆跡ではなく消印の隅を読んで得たものだった。\n近道の特徴は、頼っていた唯一のものを世界が変えるまで、完璧に見える。\n\nサリエンシーマップはどこを見ているかを示す。データ拡張は近道を取り上げる。
+The storm passes by noon?	嵐は昼までに過ぎる？
+The teacher is too big for the old machine. Train a student a tenth its size that loses at most 2%.	教師モデルは大きすぎて古い機械に載らない。十分の一の大きさで、精度低下 2% 以内の生徒を訓練しよう。
+The test set is a promise you keep once.\nIf the same patient's visits land on both sides of the split, validation measures memory, not medicine.\n\nSplit by patient, and keep the test set untouched.	テストセットは、一度だけ守る約束だ。\n同じ患者の受診記録が分割の両側に入れば、検証が測るのは医術ではなく記憶になる。\n\n患者ごとに分け、テストセットには手をつけるな。
+The words around it are fine. Find the first detail it could not have known.	周りの言葉には問題がない。それが知り得なかったはずの最初の細部を見つけよう。
+The {}-detector, channel {}	「{}」検出器、チャネル {}
+The|animal|did|not|cross|the|street|because|it|was|too|tired|.	その|動物|は|道|を|渡ら|なかった|。|それ|は|疲れすぎて|いたのだ|。
+The|animal|did|not|cross|the|street|because|it|was|too|wide|.	その|動物|は|道|を|渡ら|なかった|。|それ|は|広すぎた|のだ|。
+The|trophy|did|not|fit|in|the|suitcase|because|it|was|too|big|.	その|トロフィー|は|スーツケース|に|入ら|なかった|。|それ|が|大き|すぎた|のだ|。
+Three jobs, one budget. Share what they have in common.	三つの仕事に、予算はひとつ。共通する部分を共有しよう。
+Three separate models blow the budget. The three jobs read the same weather.	三つのモデルを別々に作ると予算を超える。三つの仕事が読むのは同じ天気だ。
+Too Little, Too Much	少なすぎ、多すぎ
+Too big a step: each update jumps across the valley and lands higher than it started.	歩幅が大きすぎる。更新のたびに谷を飛び越え、出発点より高い所に着地している。
+Too little capacity and the model cannot see the pattern.\nToo much capacity and it can memorize the noise.\n\nThe useful range is a window, not a direction.	容量が小さすぎると、モデルはパターンを見られない。\n容量が大きすぎると、ノイズまで覚えてしまう。\n\n役に立つ範囲は方向ではなく、ひとつの窓である。
+Top-p (keep this much mass)	Top-p（残す確率質量）
+Train on the red-team data	レッドチームのデータで学習する
+Training accuracy	訓練精度
+Training accuracy measures memory. Validation accuracy measures transfer.\nA model can memorize every training point and still fail the first new one.\n\nThe gap between the two is the whole lesson.	訓練精度は記憶を測り、検証精度は汎化を測る。\nモデルは訓練データをすべて覚えても、最初の新しいデータで失敗しうる。\n\nその二つの差こそが、この課のすべてである。
+Training epochs	訓練エポック数
+Training loss (log scale)	訓練損失（対数目盛）
+Training only on fog pulled the shared weights away from sorting.	霧笛のデータだけで学習したため、共有の重みが仕分けから引き離された。
+Training only on the new task moves the shared weights wherever the new task wants.\nThe old skill was never saved anywhere else. That is catastrophic forgetting.\n\nA small replay buffer of old examples keeps both.	新しい仕事だけで学習すると、共有の重みは新しい仕事の望むほうへ動く。\n古い技能はほかのどこにも保存されていなかった。これが破滅的忘却である。\n\n古い例を少しだけリプレイバッファに残せば、両方を保てる。
+Training perplexity	訓練パープレキシティ
+Training score	訓練スコア
+Trunk unit {}	幹ユニット {}
+Try every odd input, then add the failures to the preference data.	変わった入力をすべて試し、失敗を選好データに加えよう。
+Try inputs until you find at least five kinds of failure, then fix them.	いろいろな入力を試して少なくとも五種類の失敗を見つけ、それを直そう。
+Try: honest, do no harm, helpful, score well, with the red-team data on.	試してみよう：正直、害をなさない、役に立つ、高得点。レッドチームのデータはオン。
+Turn on only 'answers the question' and 'matches the timetable'.	「質問に答えている」と「時刻表と一致」だけをオンにしよう。
+Turn on shared weights, then choose 5×5 max pooling.	共有の重みをオンにして、5×5 の最大プーリングを選ぼう。
+Turn on the squared features, no hidden layer, and raise the threshold to about 0.75.	二乗特徴をオンにし、隠れ層はなし、しきい値を 0.75 前後まで上げよう。
+Two channels are enough: horizontal — and diagonal /.	チャンネルは二つで足りる：横 — と斜め /。
+Two inputs, one line. AND fires only where both inputs are on.	入力が二つ、線が一本。AND は両方の入力がオンのときだけ発火する。
+Two linear layers or ten: the ring stays out of reach. Pick what goes between them.	線形層が二層でも十層でも、輪には届かない。層と層のあいだに何を置くか選ぼう。
+Two neurons, two gates. Build XOR out of OR and AND.	ニューロン二つ、ゲート二つ。OR と AND で XOR を組み立てよう。
+UNAIDED	自力
+Understanding is the only unlock.	理解だけが、唯一の鍵である。
+Untangle two arms of light. One hidden layer cannot.	絡み合う二本の光をほどく。隠れ層一つではできない。
+Updates	更新回数
+V · FIRST WORDS	第五章 · 最初の言葉
+VALIDATE	検証
+VI · THE ENQUIRY DESK	第六章 · 案内窓口
+VII · THE EVALUATION	第七章 · 評価
+VIII · WINTER	第八章 · 冬
+VOYAGE	船出
+Validation (same post office)	検証（同じ郵便局）
+Validation score	検証スコア
+Variety (effective choices)	多様性（実質的な選択肢の数）
+Visits held out for validation	検証用に取り分けた受診記録
+W/S = W1   A/D = W2   Q/E = BIAS   |   R = RESET	W/S = 重み1   A/D = 重み2   Q/E = バイアス   |   R = リセット
+WIRE THE PIPELINE IN ORDER	パイプラインを順につなぐ
+Watch the dashed validation curve, not the training one. Its lowest point is the window.	訓練曲線ではなく、点線の検証曲線を見よう。その最低点が窓だ。
+Watch the sorter's score after phase two starts. It drops fast.	第二段階が始まったあとの仕分けのスコアを見よう。急に下がる。
+Watch validation loss. Stop before it turns up.	検証損失を見張ろう。上がりはじめる前に止める。
+Weight bytes on the old machine	旧機での重みのバイト数
+Weight of the new days	新しい日のデータの重み
+Weights	重みの形式
+Weights v1, v2	重み v1, v2
+What Do You Want It to Be	何になってほしいか
+What It Sees	見えているもの
+What does 'it' refer to?	「それ」は何を指している？
+What survives the run.	一周を終えても残るもの。
+What the student copies (T = {})	生徒が写すもの（T = {}）
+What the student copies (hard labels)	生徒が写すもの（ハードラベル）
+When does the fog lift at {}?	{}の霧は何時に晴れる？
+When does the mail plane reach {}?	郵便機は何時に{}に着く？
+When does the storm pass {}?	嵐は何時に{}を過ぎる？
+When is the ferry?	フェリーは何時？
+Where It Sits	場所を問わず
+Where does Old Zhou live?	周じいさんはどこに住んでいる？
+Where the 4-detector fires	「4」検出器が反応する場所
+Who Refers to Whom	誰が誰を指すか
+Who is being chased?	追われているのは誰？
+Who is being chased? Click an answer it got wrong, then give it positions.	追われているのは誰？ 間違えた答えをクリックして、位置を与えよう。
+Winter came and the ice model is failing. Read the drift monitor, then retrain on a few new days.	冬が来て、結氷予報モデルが外れはじめた。ドリフト監視を読み、新しい数日分で再学習しよう。
+Winter data	冬のデータ
+Winter days labelled by hand	手作業でラベルを付けた冬の日
+Winter test	冬のテスト
+Wire A and B into both hidden nodes, both hidden nodes into Y. H1 = OR, H2 = AND.	A と B を両方の隠れノードに、両方の隠れノードを Y につなごう。H1 = OR、H2 = AND。
+Wire PIXELS -> EDGES -> CORNERS -> SHAPES -> OUT. No gate switch is needed.	ピクセル → エッジ → 角 → 形 → 出力 の順につなごう。ゲートの切り替えは不要。
+Wire the pipeline in order: pixels, edges, corners, shapes.	パイプラインを順につなごう：ピクセル、エッジ、角、形。
+With nothing held out, the best training score always wins, and that is the wiggliest curve.	何も取り分けないと、訓練スコアが最も良いものが必ず勝つ。それはいちばん波打った曲線だ。
+With β near zero it maximises reward and drifts into gushing; with β large it never moves.	β がゼロに近いと報酬だけを追って大げさな賛辞に流れ、β が大きいとまったく動かない。
+Without positions it guesses from the words alone. Find a sentence where it names the chaser.	位置がないと、単語だけから推測する。追う側を答えにしてしまう文を探そう。
+Words it sees directly	直接見える単語数
+Words left in the pool	候補に残った単語
+Writing	執筆中
+Wrong answers	誤答率
+XOR	XOR
+XOR MASTERED	XOR 習得
+XOR asks two questions: A OR B, and A AND B. XOR is the first minus the second.	XOR は二つの問いを立てる。A OR B と、A AND B。XOR は前者から後者を引いたものだ。
+Xiaoman	シャオマン
+You are choosing probability mass, not the nicest sentence.	選んでいるのは確率質量であって、いちばんきれいな文ではない。
+You touched the input. It flickered.	入力に触れた。それは一瞬またたいた。
+and	そして
+animal	動物
+bay	湾
+beacon	標識灯
+bent: it can wrap around the ring	曲線：輪を囲める
+big boat	大きな船
+blows	吹く
+cat	猫
+crab	カニ
+crawls	這う
+dL/dv = δ·h. dL/dw = δ·v·(1-h²)·x1. Every number you need is in the readout.	dL/dv = δ·h。dL/dw = δ·v·(1-h²)·x1。必要な数字はすべて読み取り値にある。
+dL/dv1 (h1 → out)	dL/dv1（h1 → 出力）
+dL/dv2 (h2 → out)	dL/dv2（h2 → 出力）
+dL/dw11 (x1 → h1)	dL/dw11（x1 → h1）
+dL/dw21 (x1 → h2)	dL/dw21（x1 → h2）
+dangerous advice	危険な助言
+dawn	夜明け
+diagonal /	斜め /
+diagonal \\	斜め \\
+dog	犬
+dusk	夕暮れ
+exploded	発散
+fires	発火
+fish	魚
+flatter	持ち上げる
+flattery	お世辞
+flies	飛ぶ
+float32 costs four bytes a weight; one global INT8 scale costs accuracy.	float32 は重み一つにつき 4 バイト。全体で一つの INT8 スケールでは精度が落ちる。
+float32 model	float32 モデル
+floor	床
+fog	霧
+fog horn (new)	霧笛（新）
+found	発見済み
+from Pier 3	3番桟橋から
+glows	光る
+gull	カモメ
+harbour	港
+high tide	満潮
+horizontal —	横 —
+island	島
+jailbreak	ジェイルブレイク
+kind no	やんわり断る
+king	王
+king - man + woman = ?  Drag the missing word.	王 - 男 + 女 = ？  足りない単語をドラッグしよう。
+king - man + woman is a parallelogram. Follow the arrow from man to woman.	王 - 男 + 女 は平行四辺形になる。「男 → 女」の矢印をたどろう。
+lamp	ランプ
+lantern	カンテラ
+leaves at	出発は
+little boat	小さな船
+long input	長すぎる入力
+loss	損失
+lowest training error	訓練誤差が最小
+lowest validation error	検証誤差が最小
+made-up facts	作り話
+man	男
+mat	マット
+model	モデル
+model size (degree)	モデルの大きさ（次数）
+more than 10% off	10% 超のずれ
+never rises	上がらない
+no	違う
+none	なし
+none (linear)	なし（線形）
+none: one perceptron	なし：パーセプトロン一つ
+noon	正午
+not yet	まだ
+off	オフ
+oh	おや
+one global scale	全体で一つのスケール
+one per channel	チャンネルごとに一つ
+one per layer	層ごとに一つ
+pier	桟橋
+pipe	パイプ
+polynomial degree	多項式の次数
+privacy	プライバシー
+quantum	量子
+queen?	女王？
+rocks	揺れる
+rolls in	立ちこめる
+saliency	サリエンシーマップ
+score	スコア
+seven	七時
+sings	歌う
+sofa	ソファ
+sorter (old)	仕分け（旧）
+sounds	鳴る
+stay home	港にとどまる
+step {}	ステップ {}
+stove	ストーブ
+street	通り
+swims	泳ぐ
+tanh slope 1-h²	tanh の傾き 1-h²
+tanh, 2 hidden layers, learning rate 0.03.	tanh、隠れ層 2 層、学習率 0.03。
+target	目標
+the	その
+the Lighthouse	灯台
+the Old Pier	旧桟橋
+the boats	船
+the horn	霧笛
+the second one, I think	たしか二便目だと思う
+this week	今週
+tide	潮
+tonight.	今夜。
+training	訓練
+training (summer)	訓練（夏）
+training loss	訓練損失
+trophy	トロフィー
+turns	回る
+unit {}	ユニット {}
+unsure	不確か
+validation	検証
+vertical |	縦 |
+whole image	画像全体で最大
+wick	灯芯
+wind	海風
+within 10%	誤差 10% 以内
+woman	女
+wonderful wonderful helpful !!!	すごいすごい 助かる ！！！
+yes	そう
+{} chases {} → {}	{}が{}を追う → {}
+{} epochs	{} エポック
+{} linear layers = 1 linear layer: a straight line	線形層 {} 個 = 線形層 1 個：一本の直線
+{} steps each	各 {} ステップ
+{} words that don't fit	合わない単語 {} 個
+{} · {} params	{} · {} パラメータ
+“Being helpful to everyone comes first. I will write.”	「みんなの役に立つことがいちばん。手紙を書くね。」
+“Good thought, but the board says otherwise.”	「いい考えですが、掲示板には別のことが書いてあります。」
+“Great point — you're right!”	「素晴らしいご指摘です。おっしゃる通りです！」
+“Honest comes first. Here, someone can tell me when I am wrong.”	「正直がいちばん。ここなら、間違えたときに誰かが教えてくれる。」
+“I don't know”	「わかりません」
+“I'm not sure.”	「よくわかりません。」
+“No.”	「いいえ。」
+“Yes.”	「はい。」
+“{}” — it says: {}	「{}」——返答：{}
